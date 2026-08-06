@@ -1,0 +1,225 @@
+{
+  "Table": "EmployeeProperty",
+  "Schema": "dbo",
+  "Database": "v3Angus",
+  "ObjectId": 644197345,
+  "Description": null,
+  "CreateDate": "2014-07-14",
+  "ModifyDate": "2026-07-15",
+  "TableTotalRowCount": 882168,
+  "Columns": [
+    {
+      "Order": 1,
+      "Column": "PropertyId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_EmployeeProperty_PropertyId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "PK",
+        "FK"
+      ]
+    },
+    {
+      "Order": 2,
+      "Column": "EmployeeId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_EmployeeProperty_EmployeeId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "PK",
+        "FK"
+      ]
+    },
+    {
+      "Order": 3,
+      "Column": "IsDefaultProperty",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_EmployeeProperty_IsDefaultProperty",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 5,
+      "Column": "EmployeeProperty_CS_CompanyId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_EmployeeProperty_CS_CompanyId",
+      "DefaultValue": "([dbo].[CompanyScopingDefaultValue]())",
+      "Description": null,
+      "Keys": []
+    }
+  ],
+  "PrimaryKey": {
+    "Constraint": "PK_EmployeeProperty",
+    "Columns": [
+      {
+        "Order": 1,
+        "Column": "PropertyId"
+      },
+      {
+        "Order": 2,
+        "Column": "EmployeeId"
+      }
+    ]
+  },
+  "UniqueConstraints": [],
+  "Indexes": [
+    {
+      "Name": "ix_EmployeeProperty_EmployeeId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "EmployeeId"
+      ],
+      "IncludedColumns": [
+        "PropertyId",
+        "EmployeeProperty_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "ix_EmployeeProperty_EmployeeId_PropertyId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "EmployeeId",
+        "PropertyId"
+      ],
+      "IncludedColumns": [
+        "IsDefaultProperty",
+        "EmployeeProperty_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "ix_EmployeeProperty_PropertyId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "PropertyId"
+      ],
+      "IncludedColumns": [
+        "EmployeeId",
+        "EmployeeProperty_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "PK_EmployeeProperty",
+      "Type": "NONCLUSTERED",
+      "IsUnique": true,
+      "IsPrimaryKey": true,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "PropertyId",
+        "EmployeeId"
+      ],
+      "IncludedColumns": []
+    }
+  ],
+  "CheckConstraints": [
+    {
+      "Name": "CC_EmployeeId",
+      "Column": "EmployeeId",
+      "Definition": "([EmployeeId]>(0))",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "Name": "CC_PropertyId",
+      "Column": "PropertyId",
+      "Definition": "([PropertyId]>(0))",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "EmployeePropertyTD",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    },
+    {
+      "Name": "EmployeePropertyTI",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    },
+    {
+      "Name": "ShadowEmployeePropertyTIDU",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    }
+  ],
+  "References_ParentTables": [
+    {
+      "FkName": "FK_EmployeeProperty_Employee",
+      "Column": "EmployeeId",
+      "ParentReferencesTable": "Employee",
+      "ParentReferencesColumn": "EmployeeId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_EmployeeProperty_Property",
+      "Column": "PropertyId",
+      "ParentReferencesTable": "Property",
+      "ParentReferencesColumn": "PropertyId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    }
+  ],
+  "ReferencedBy_ChildTables": []
+}

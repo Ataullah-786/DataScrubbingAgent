@@ -1,0 +1,710 @@
+{
+  "Table": "Area",
+  "Schema": "dbo",
+  "Database": "v3Angus",
+  "ObjectId": 66099276,
+  "Description": null,
+  "CreateDate": "2014-07-14",
+  "ModifyDate": "2026-07-15",
+  "TableTotalRowCount": 983942,
+  "Columns": [
+    {
+      "Order": 1,
+      "Column": "AreaId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_AreaId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "PK"
+      ]
+    },
+    {
+      "Order": 2,
+      "Column": "BuildingId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_BuildingId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "FK"
+      ]
+    },
+    {
+      "Order": 3,
+      "Column": "IsTrArea",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_IsTrArea",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 4,
+      "Column": "IsPmArea",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_IsPmArea",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 5,
+      "Column": "IsCommonArea",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_IsCommonArea",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 6,
+      "Column": "IsActiveArea",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_IsActiveArea",
+      "DefaultValue": "((1))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 7,
+      "Column": "Floor",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_Floor",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 8,
+      "Column": "Suite",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_Suite",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 9,
+      "Column": "ExternalFloorCode",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_ExternalFloorCode",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 10,
+      "Column": "ExternalSuiteCode",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_ExternalSuiteCode",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 11,
+      "Column": "tmpSubLocationId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_tmpSubLocationId",
+      "DefaultValue": "((-1))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 12,
+      "Column": "AciVisitorAccessLevel",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_AciVisitorAccessLevel",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 13,
+      "Column": "DateUpdatedUtc",
+      "DataType": "datetime",
+      "MaxLength": 8,
+      "Precision": 23,
+      "Scale": 3,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_DateUpdatedUtc",
+      "DefaultValue": "(getutcdate())",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 14,
+      "Column": "DateCreatedUtc",
+      "DataType": "datetime",
+      "MaxLength": 8,
+      "Precision": 23,
+      "Scale": 3,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_DateCreatedUtc",
+      "DefaultValue": "(getutcdate())",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 16,
+      "Column": "Area_CS_CompanyId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_CS_CompanyId",
+      "DefaultValue": "([dbo].[CompanyScopingDefaultValue]())",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 17,
+      "Column": "AciSegmentName",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_AciSegmentName",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 18,
+      "Column": "IntegrationIdentifier",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Area_IntegrationIdentifier",
+      "DefaultValue": "(newid())",
+      "Description": null,
+      "Keys": []
+    }
+  ],
+  "PrimaryKey": {
+    "Constraint": null,
+    "Columns": [
+      {
+        "Order": 1,
+        "Column": "AreaId"
+      }
+    ]
+  },
+  "UniqueConstraints": [],
+  "Indexes": [
+    {
+      "Name": "ci_Area_AreaId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "AreaId"
+      ],
+      "IncludedColumns": [
+        "BuildingId",
+        "IsTrArea",
+        "IsPmArea",
+        "IsCommonArea",
+        "IsActiveArea",
+        "Floor",
+        "Suite",
+        "ExternalFloorCode",
+        "ExternalSuiteCode",
+        "tmpSubLocationId",
+        "AciVisitorAccessLevel",
+        "DateUpdatedUtc",
+        "DateCreatedUtc",
+        "Area_CS_CompanyId",
+        "AciSegmentName",
+        "IntegrationIdentifier"
+      ]
+    },
+    {
+      "Name": "ix_Area_BuildingId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId"
+      ],
+      "IncludedColumns": [
+        "AreaId",
+        "IsActiveArea",
+        "Floor",
+        "Suite",
+        "IsTrArea",
+        "IsPmArea",
+        "IsCommonArea",
+        "Area_CS_CompanyId",
+        "ExternalFloorCode",
+        "ExternalSuiteCode",
+        "AciVisitorAccessLevel"
+      ]
+    },
+    {
+      "Name": "ix_Area_BuildingId_IsActiveArea",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "IsActiveArea"
+      ],
+      "IncludedColumns": [
+        "AreaId",
+        "IsTrArea",
+        "IsCommonArea",
+        "Floor",
+        "Suite",
+        "Area_CS_CompanyId",
+        "DateUpdatedUtc",
+        "ExternalFloorCode",
+        "ExternalSuiteCode",
+        "AciVisitorAccessLevel",
+        "DateCreatedUtc",
+        "AciSegmentName",
+        "IntegrationIdentifier"
+      ]
+    },
+    {
+      "Name": "ix_Area_BuildingId_IsActiveArea_Floor",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "IsActiveArea",
+        "Floor"
+      ],
+      "IncludedColumns": [
+        "AreaId",
+        "IsTrArea",
+        "IsCommonArea",
+        "Suite",
+        "Area_CS_CompanyId",
+        "IsPmArea"
+      ]
+    },
+    {
+      "Name": "ix_Area_BuildingId_IsActiveArea_Floor_Suite",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "IsActiveArea",
+        "Floor",
+        "Suite"
+      ],
+      "IncludedColumns": [
+        "AreaId",
+        "Area_CS_CompanyId",
+        "IsTrArea",
+        "IsCommonArea",
+        "IsPmArea",
+        "DateUpdatedUtc",
+        "ExternalFloorCode",
+        "ExternalSuiteCode",
+        "AciVisitorAccessLevel",
+        "DateCreatedUtc",
+        "AciSegmentName",
+        "IntegrationIdentifier"
+      ]
+    },
+    {
+      "Name": "ix_Area_BuildingId_IsCommonArea_IsActiveArea_Floor",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "IsCommonArea",
+        "IsActiveArea",
+        "Floor"
+      ],
+      "IncludedColumns": [
+        "Suite",
+        "Area_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "ix_Area_BuildingId_IsTrArea_IsActiveArea",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "IsTrArea",
+        "IsActiveArea"
+      ],
+      "IncludedColumns": [
+        "AreaId",
+        "IsCommonArea",
+        "Floor",
+        "Suite",
+        "Area_CS_CompanyId",
+        "IsPmArea",
+        "ExternalFloorCode",
+        "ExternalSuiteCode",
+        "AciVisitorAccessLevel",
+        "DateUpdatedUtc",
+        "DateCreatedUtc",
+        "AciSegmentName"
+      ]
+    },
+    {
+      "Name": "PK_Area",
+      "Type": "NONCLUSTERED",
+      "IsUnique": true,
+      "IsPrimaryKey": true,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "AreaId"
+      ],
+      "IncludedColumns": []
+    },
+    {
+      "Name": "UK_Area_BuildingId_Floor_Suite",
+      "Type": "NONCLUSTERED",
+      "IsUnique": true,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "Floor",
+        "Suite"
+      ],
+      "IncludedColumns": [
+        "Area_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "UK_Area_IntegrationIdentifier",
+      "Type": "NONCLUSTERED",
+      "IsUnique": true,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "IntegrationIdentifier"
+      ],
+      "IncludedColumns": []
+    }
+  ],
+  "CheckConstraints": [
+    {
+      "Name": null,
+      "Column": null,
+      "Definition": null,
+      "IsDisabled": false,
+      "IsNotTrusted": false
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "AreaTD",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    },
+    {
+      "Name": "AreaTI",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    },
+    {
+      "Name": "AreaTU",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    },
+    {
+      "Name": "ShadowAreaTIDU",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    }
+  ],
+  "References_ParentTables": [
+    {
+      "FkName": "FK_Area_Building",
+      "Column": "BuildingId",
+      "ParentReferencesTable": "Building",
+      "ParentReferencesColumn": "BuildingId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    }
+  ],
+  "ReferencedBy_ChildTables": [
+    {
+      "FkName": "FK_CommunicationCriteria_Area",
+      "ChildTable": "CommunicationCriteria",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Contact_Area",
+      "ChildTable": "Contact",
+      "ChildColumn": "BaseAreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Equipment_Area",
+      "ChildTable": "Equipment",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_InspectionScheduleArea_Area",
+      "ChildTable": "InspectionScheduleArea",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_PackagePass_Area",
+      "ChildTable": "PackagePass",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Request_Area",
+      "ChildTable": "Request",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Resource_Area",
+      "ChildTable": "Resource",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_TenantAreaLease_Area",
+      "ChildTable": "TenantAreaLease",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Visit_Area",
+      "ChildTable": "Visit",
+      "ChildColumn": "AreaIdDestination",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_WorkOrder_Area",
+      "ChildTable": "WorkOrder",
+      "ChildColumn": "AreaId",
+      "ParentColumn": "AreaId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    }
+  ]
+}

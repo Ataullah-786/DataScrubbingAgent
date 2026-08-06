@@ -1,0 +1,619 @@
+{
+  "Table": "Lease",
+  "Schema": "dbo",
+  "Database": "v3Angus",
+  "ObjectId": 1122103038,
+  "Description": null,
+  "CreateDate": "2014-07-14",
+  "ModifyDate": "2026-07-15",
+  "TableTotalRowCount": 196026,
+  "Columns": [
+    {
+      "Order": 1,
+      "Column": "LeaseId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_LeaseId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "PK"
+      ]
+    },
+    {
+      "Order": 2,
+      "Column": "PropertyId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_PropertyId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "FK"
+      ]
+    },
+    {
+      "Order": 3,
+      "Column": "BuildingId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_BuildingId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "FK"
+      ]
+    },
+    {
+      "Order": 4,
+      "Column": "TenantId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_TenantId",
+      "DefaultValue": "((0))",
+      "Description": null,
+      "Keys": [
+        "FK"
+      ]
+    },
+    {
+      "Order": 5,
+      "Column": "AgreementAttachmentId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "YES",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": null,
+      "DefaultValue": null,
+      "Description": null,
+      "Keys": [
+        "FK"
+      ]
+    },
+    {
+      "Order": 6,
+      "Column": "IsActiveLease",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_IsActiveLease",
+      "DefaultValue": "((1))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 7,
+      "Column": "DateInactive",
+      "DataType": "smalldatetime",
+      "MaxLength": 4,
+      "Precision": 16,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_DateInactive",
+      "DefaultValue": "('1900-01-01')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 8,
+      "Column": "ExternalLeaseCode",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_ExternalLeaseCode",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 9,
+      "Column": "ExternalAddressCode",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_ExternalAddressCode",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 10,
+      "Column": "ExternalAltAddressCode",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_ExternalAltAddressCode",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 11,
+      "Column": "ExternalUnitCode",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_ExternalUnitCode",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 12,
+      "Column": "BusinessUnit",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_BusinessUnit",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 13,
+      "Column": "LeaseType",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_LeaseType",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 14,
+      "Column": "LeaseTenantName",
+      "DataType": "varchar",
+      "MaxLength": 50,
+      "Precision": 0,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": "SQL_Latin1_General_CP1_CI_AS",
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_LeaseTenantName",
+      "DefaultValue": "('')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 15,
+      "Column": "DateStart",
+      "DataType": "smalldatetime",
+      "MaxLength": 4,
+      "Precision": 16,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_DateStart",
+      "DefaultValue": "('1900-01-01')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 16,
+      "Column": "DateEnd",
+      "DataType": "smalldatetime",
+      "MaxLength": 4,
+      "Precision": 16,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_DateEnd",
+      "DefaultValue": "('1900-01-01')",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 17,
+      "Column": "tmpLeaseId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_tmpLeaseId",
+      "DefaultValue": "((-1))",
+      "Description": null,
+      "Keys": []
+    },
+    {
+      "Order": 19,
+      "Column": "Lease_CS_CompanyId",
+      "DataType": "int",
+      "MaxLength": 4,
+      "Precision": 10,
+      "Scale": 0,
+      "Nullable": "NO",
+      "Collation": null,
+      "IsIdentity": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
+      "IsComputed": false,
+      "ComputedDefinition": null,
+      "DefaultConstraint": "DF_Lease_CS_CompanyId",
+      "DefaultValue": "([dbo].[CompanyScopingDefaultValue]())",
+      "Description": null,
+      "Keys": []
+    }
+  ],
+  "PrimaryKey": {
+    "Constraint": null,
+    "Columns": [
+      {
+        "Order": 1,
+        "Column": "LeaseId"
+      }
+    ]
+  },
+  "UniqueConstraints": [],
+  "Indexes": [
+    {
+      "Name": "ix_dbo_Lease_LeaseId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "LeaseId"
+      ],
+      "IncludedColumns": [
+        "ExternalLeaseCode",
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "ix_Lease_AgreementAttachmentId_LeaseId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "AgreementAttachmentId"
+      ],
+      "IncludedColumns": [
+        "LeaseId",
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "IX_Lease_BuildingIdIsActiveLease",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "IsActiveLease"
+      ],
+      "IncludedColumns": [
+        "PropertyId",
+        "TenantId",
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "IX_Lease_IsActiveLeaseBuildingId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "IsActiveLease",
+        "BuildingId"
+      ],
+      "IncludedColumns": [
+        "LeaseId",
+        "PropertyId",
+        "TenantId",
+        "ExternalLeaseCode",
+        "ExternalAddressCode",
+        "ExternalAltAddressCode",
+        "ExternalUnitCode",
+        "LeaseTenantName",
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "ix_Lease_LeaseId_AgreementAttachmentId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "LeaseId"
+      ],
+      "IncludedColumns": [
+        "AgreementAttachmentId",
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "IX_LeaseBuildingId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "BuildingId",
+        "TenantId"
+      ],
+      "IncludedColumns": [
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "IX_LeaseExternalCode",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "ExternalLeaseCode",
+        "LeaseId",
+        "IsActiveLease"
+      ],
+      "IncludedColumns": [
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "IX_LeaseTenantId",
+      "Type": "NONCLUSTERED",
+      "IsUnique": false,
+      "IsPrimaryKey": false,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "TenantId",
+        "BuildingId"
+      ],
+      "IncludedColumns": [
+        "Lease_CS_CompanyId"
+      ]
+    },
+    {
+      "Name": "PK_TenantLease",
+      "Type": "NONCLUSTERED",
+      "IsUnique": true,
+      "IsPrimaryKey": true,
+      "IsUniqueConstraint": false,
+      "FilterDefinition": null,
+      "KeyColumns": [
+        "LeaseId"
+      ],
+      "IncludedColumns": []
+    }
+  ],
+  "CheckConstraints": [
+    {
+      "Name": null,
+      "Column": null,
+      "Definition": null,
+      "IsDisabled": false,
+      "IsNotTrusted": false
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "ShadowLeaseTIDU",
+      "IsDisabled": false,
+      "IsInsteadOf": false
+    }
+  ],
+  "References_ParentTables": [
+    {
+      "FkName": "FK_Lease_Building",
+      "Column": "BuildingId",
+      "ParentReferencesTable": "Building",
+      "ParentReferencesColumn": "BuildingId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Lease_FileAttachment",
+      "Column": "AgreementAttachmentId",
+      "ParentReferencesTable": "FileAttachment",
+      "ParentReferencesColumn": "AttachmentId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Lease_Property",
+      "Column": "PropertyId",
+      "ParentReferencesTable": "Property",
+      "ParentReferencesColumn": "PropertyId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_Lease_Tenant",
+      "Column": "TenantId",
+      "ParentReferencesTable": "Tenant",
+      "ParentReferencesColumn": "TenantId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    }
+  ],
+  "ReferencedBy_ChildTables": [
+    {
+      "FkName": "FK_COI_Lease",
+      "ChildTable": "COI",
+      "ChildColumn": "LeaseId",
+      "ParentColumn": "LeaseId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_TenantAreaLease_Lease",
+      "ChildTable": "TenantAreaLease",
+      "ChildColumn": "LeaseId",
+      "ParentColumn": "LeaseId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_WorkOrder_Lease",
+      "ChildTable": "WorkOrder",
+      "ChildColumn": "LeaseId",
+      "ParentColumn": "LeaseId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    },
+    {
+      "FkName": "FK_XFerHistorical_Lease",
+      "ChildTable": "XFerHistorical",
+      "ChildColumn": "LeaseId",
+      "ParentColumn": "LeaseId",
+      "DeleteAction": "NO_ACTION",
+      "UpdateAction": "NO_ACTION",
+      "IsDisabled": false,
+      "IsNotTrusted": true
+    }
+  ]
+}
