@@ -1,0 +1,4734 @@
+﻿{
+    "Table":  "Lease",
+    "Schema":  "QUBEPFLLAB",
+    "Database":  null,
+    "ObjectId":  723266,
+    "Description":  null,
+    "CreateDate":  "2024-12-18",
+    "ModifyDate":  "2026-06-24",
+    "TableTotalRowCount":  10981,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "LEAS_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "LEAS_USAGE_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "LEAS_COMP_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "LEAS_PROP_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "LEAS_ABOVE_BASE_AMT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  4,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "LEAS_ADV_NOTICE_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  2,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "LEAS_BASE_RATE_NUM",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "LEAS_BREACH_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "LEAS_BREACH_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "LEAS_START_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "LEAS_AFTR_EXP_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "LEAS_DISCLM_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  13,
+                        "Column":  "LEAS_DISCLM_BY_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  14,
+                        "Column":  "LEAS_DISCLM_BY_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  15,
+                        "Column":  "LEAS_DISCLM_BY_DESC",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  16,
+                        "Column":  "LEAS_AGRMT_DESC",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  17,
+                        "Column":  "LEAS_EXPIRY_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  18,
+                        "Column":  "LEAS_GRACE_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  19,
+                        "Column":  "LEAS_INT_ON_ARR_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  20,
+                        "Column":  "LEAS_MIN_NTC_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  2,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  21,
+                        "Column":  "LEAS_PRNT_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  22,
+                        "Column":  "LEAS_PRNT_BY_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  23,
+                        "Column":  "LEAS_PRNT_BY_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  24,
+                        "Column":  "LEAS_PRNT_BY_DESC",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  25,
+                        "Column":  "LEAS_RCVE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  26,
+                        "Column":  "LEAS_RCVE_BY_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  27,
+                        "Column":  "LEAS_RCVE_BY_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  28,
+                        "Column":  "LEAS_STATUS_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  29,
+                        "Column":  "LEAS_TERM_MONTH_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  2,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  30,
+                        "Column":  "LEAS_TERM_YEAR_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  4,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  31,
+                        "Column":  "LEAS_TYPE_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  32,
+                        "Column":  "LEAS_DESC",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  240,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  33,
+                        "Column":  "LEAS_USER_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  34,
+                        "Column":  "LEAS_VATABLE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  35,
+                        "Column":  "LEAS_CURRENT_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  36,
+                        "Column":  "LEAS_DEMAND_TYPE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  37,
+                        "Column":  "LEAS_COMMENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4000,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  38,
+                        "Column":  "LEAS_CONT_OCC_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  39,
+                        "Column":  "LEAS_TNNT_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  40,
+                        "Column":  "LEAS_MIN_NTCE_MNTH",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  2,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  41,
+                        "Column":  "LEAS_ADV_NTC_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  2,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  42,
+                        "Column":  "LEAS_TIME_ESS_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  43,
+                        "Column":  "LEAS_REV_INT_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  44,
+                        "Column":  "LEAS_REV_ABOVE_BASE_AMT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  4,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  45,
+                        "Column":  "LEAS_TERM_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  46,
+                        "Column":  "LEAS_LNLD_TNNT_ACT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  47,
+                        "Column":  "LEAS_STMT_BF_AMT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  14,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  48,
+                        "Column":  "LEAS_STMT_BF_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  49,
+                        "Column":  "LEAS_RENT_INC_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  50,
+                        "Column":  "LEAS_INT_ON_SC_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  51,
+                        "Column":  "LEAS_SC_ABV_BEL_BASE_AMT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  4,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  52,
+                        "Column":  "LEAS_PRIVITY_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  53,
+                        "Column":  "LEAS_INC_GRACE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  54,
+                        "Column":  "LEAS_REM_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  55,
+                        "Column":  "LEAS_TERM_START_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  56,
+                        "Column":  "LEAS_MAIN_RENT_CDMJ_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  57,
+                        "Column":  "LEAS_MAIN_RENT_CDMI_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  58,
+                        "Column":  "LEAS_CUR_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  59,
+                        "Column":  "LEAS_AGREE_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  60,
+                        "Column":  "LEAS_OCCU_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  61,
+                        "Column":  "LEAS_TNMO_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  62,
+                        "Column":  "LEAS_REVERT_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  63,
+                        "Column":  "LEAS_RENT_START_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  64,
+                        "Column":  "LEAS_INIT_RENT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  13,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  65,
+                        "Column":  "LEAS_SC_ON_AC_FREQ",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  66,
+                        "Column":  "LEAS_GROP_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  67,
+                        "Column":  "LEAS_TNNH_AC_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  68,
+                        "Column":  "LEAS_EFT_AC_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  69,
+                        "Column":  "LEAS_EXTRACT_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  70,
+                        "Column":  "LEAS_RVW_ERLST_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  71,
+                        "Column":  "LEAS_RVW_LTST_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  72,
+                        "Column":  "LEAS_RVW_SRVD_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  73,
+                        "Column":  "LEAS_RVW_AKNL_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  74,
+                        "Column":  "LEAS_RVW_TNNT_CNTR_BY_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  75,
+                        "Column":  "LEAS_RVW_TNNT_CNTR_SRVD_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  76,
+                        "Column":  "LEAS_RVW_RICS_BY_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  77,
+                        "Column":  "LEAS_RVW_RICS_APPL_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  78,
+                        "Column":  "LEAS_RVW_SLICTR_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  79,
+                        "Column":  "LEAS_RVW_LST_CNTCT_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  80,
+                        "Column":  "LEAS_EXP_ERLST_S40_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  81,
+                        "Column":  "LEAS_EXP_LTST_S40_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  82,
+                        "Column":  "LEAS_EXP_ERLST_S25_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  83,
+                        "Column":  "LEAS_EXP_LTST_S25_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  84,
+                        "Column":  "LEAS_EXP_S25_SRVD_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  85,
+                        "Column":  "LEAS_EXP_S25_AKNL_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  86,
+                        "Column":  "LEAS_EXP_S26_RCVD_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  87,
+                        "Column":  "LEAS_EXP_S27_RCVD_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  88,
+                        "Column":  "LEAS_EXP_SLICTR_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  89,
+                        "Column":  "LEAS_EXP_LST_CNTCT_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  90,
+                        "Column":  "LEAS_DMSE_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  91,
+                        "Column":  "LEAS_EXP_REC_RATIO",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  6,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  92,
+                        "Column":  "LEAS_EXP_REC_START_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  93,
+                        "Column":  "LEAS_STOPS_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  94,
+                        "Column":  "LEAS_STOPS_RCPT_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  95,
+                        "Column":  "LEAS_RCVE_BY_DESC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  96,
+                        "Column":  "LEAS_AUTO_GENERATE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  97,
+                        "Column":  "LEAS_DEMAND_TYPE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  98,
+                        "Column":  "LEAS_TNNH_BILL_ADDR_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  99,
+                        "Column":  "LEAS_PERFORMED_MOVE_OUT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  100,
+                        "Column":  "LEAS_ORGN_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  101,
+                        "Column":  "LEAS_STR_LINE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  102,
+                        "Column":  "LEAS_OTHER_INCENTIVES_AMT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  13,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  103,
+                        "Column":  "LEAS_RMLS_CDGN_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  104,
+                        "Column":  "LEAS_ICMP_HLSE_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  105,
+                        "Column":  "LEAS_REVIEW_BASIS",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  106,
+                        "Column":  "LEAS_RENTAL_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  107,
+                        "Column":  "LEAS_PRCT_RENT_USE_GPER",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  108,
+                        "Column":  "LEAS_STAT_FREQ_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  109,
+                        "Column":  "LEAS_PAYM_FREQ_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  110,
+                        "Column":  "LEAS_PRCT_RENT_START",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  111,
+                        "Column":  "LEAS_PRCT_RENT_STAT_DAYS",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  112,
+                        "Column":  "LEAS_PRCT_RENT_YEAR_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  113,
+                        "Column":  "LEAS_PRCT_RENT_ACCRUAL_AC",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  114,
+                        "Column":  "LEAS_PRCT_RENT_CREDIT_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  115,
+                        "Column":  "LEAS_MIN_RENT_ANN_ADJ",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  13,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  116,
+                        "Column":  "LEAS_MIN_RENT_FLOOR",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  13,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  117,
+                        "Column":  "LEAS_ABS_MIN_RENT_FLOOR",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  118,
+                        "Column":  "LEAS_CURR_RENT_FLOOR",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  13,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  119,
+                        "Column":  "LEAS_PRODUCE_STANDARD_STMT_REP",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  120,
+                        "Column":  "LEAS_PRCT_RENT_REPORT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  121,
+                        "Column":  "LEAS_SALES_ANAL_REP",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  122,
+                        "Column":  "LEAS_SALES_ANALYSIS_REPORT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  123,
+                        "Column":  "LEAS_PRCT_RENT_POST_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  124,
+                        "Column":  "LEAS_PRCT_RENT_ANNUAL_PAYMENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  125,
+                        "Column":  "LEAS_EXT_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  80,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  126,
+                        "Column":  "LEAS_PRCT_RENT_START_ORIG",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  127,
+                        "Column":  "LEAS_EXCH_CDBK_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  128,
+                        "Column":  "LEAS_EXCH_RATE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  129,
+                        "Column":  "LEAS_CONT_CURR_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  130,
+                        "Column":  "LEAS_TERM_DAY_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  131,
+                        "Column":  "LEAS_DSRT_RENT_PERCENT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  5,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  132,
+                        "Column":  "LEAS_DSRT_SERV_PERCENT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  5,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  133,
+                        "Column":  "LEAS_DSRT_OTHER_PERCENT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  5,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  134,
+                        "Column":  "LEAS_DSRT_RENT_CDMJ_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  135,
+                        "Column":  "LEAS_DSRT_RENT_CDMI_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  136,
+                        "Column":  "LEAS_DSRT_SERV_CDMJ_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  137,
+                        "Column":  "LEAS_DSRT_SERV_CDMI_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  138,
+                        "Column":  "LEAS_DSRT_OTHER_CDMJ_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  139,
+                        "Column":  "LEAS_DSRT_OTHER_CDMI_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  140,
+                        "Column":  "LEAS_QUOT_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  141,
+                        "Column":  "LEAS_MORT_TYPE_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  142,
+                        "Column":  "LEAS_FLOOR",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  5,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  143,
+                        "Column":  "LEAS_CAP",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  5,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  144,
+                        "Column":  "LEAS_REPORT_CAT_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  145,
+                        "Column":  "LEAS_MORTGAGE_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027L\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  146,
+                        "Column":  "LEAS_EX_ACCRUAL_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  147,
+                        "Column":  "LEAS_GRACE_NUM_NON_RENT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  148,
+                        "Column":  "LEAS_INT_ON_GRACE_NON_RENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  149,
+                        "Column":  "LEAS_INT_ON_GRACE_RENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  150,
+                        "Column":  "LEAS_TURNOVER_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  151,
+                        "Column":  "LEAS_IMPORT_VERSION",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  152,
+                        "Column":  "LEAS_REG_CHARGE_STATEMENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  153,
+                        "Column":  "LEAS_MORT_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  154,
+                        "Column":  "LEAS_TRANCHE_SEQN_NUM",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  155,
+                        "Column":  "LEAS_MORT_ARRANGE_FEE",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  13,
+                        "Scale":  2,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  156,
+                        "Column":  "LEAS_MORT_LEND_HEDGE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  157,
+                        "Column":  "LEAS_MORT_LEND_HEDGE_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  80,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  158,
+                        "Column":  "LEAS_MORT_LEND_HEDGE_COMMENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4000,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  159,
+                        "Column":  "LEAS_MORT_BORR_HEDGE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  160,
+                        "Column":  "LEAS_MORT_BORR_HEDGE_COMMENT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4000,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  161,
+                        "Column":  "LEAS_MORT_REPAY_CDMJ",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  162,
+                        "Column":  "LEAS_MORT_REPAY_CDMI",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  163,
+                        "Column":  "LEAS_INT_ON_MORT_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  164,
+                        "Column":  "LEAS_INT_ON_GRACE_MORT",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  165,
+                        "Column":  "LEAS_MORT_ABOVE_MARGIN_AMT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  5,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  166,
+                        "Column":  "LEAS_GRACE_NUM_MORT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  167,
+                        "Column":  "QCID",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  168,
+                        "Column":  "LEAS_DOC_LAN_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  169,
+                        "Column":  "LEAS_TERI_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  170,
+                        "Column":  "LEAS_STOP_BY_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  171,
+                        "Column":  "LEAS_STOP_BY_DESC",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  480,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  172,
+                        "Column":  "LEAS_STR_LINE_START",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  173,
+                        "Column":  "LEAS_STR_LINE_END",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  174,
+                        "Column":  "LEAS_SEP_INV_BY_DUE_DATE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  175,
+                        "Column":  "LEAS_SEP_INV_BY_TRANS",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  176,
+                        "Column":  "LEAS_USE_GRAD_INV_GRP_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  177,
+                        "Column":  "LEAS_CREATE_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  178,
+                        "Column":  "LEAS_AC_STANDARD",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  179,
+                        "Column":  "LEAS_DURATION_GILT",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  10,
+                        "Scale":  5,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  180,
+                        "Column":  "SOURCE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  181,
+                        "Column":  "LEAS_RENT_INC_FLAG1",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  182,
+                        "Column":  "LEAS_RENT_INC_FLAG2",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  183,
+                        "Column":  "LEAS_RENT_INC_FLAG3",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  184,
+                        "Column":  "LEAS_RENT_INC_FLAG4",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  185,
+                        "Column":  "LEAS_RENT_INC_FLAG5",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  186,
+                        "Column":  "LEAS_SL_IND_RENEWAL",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  187,
+                        "Column":  "LEAS_GENERATE_ZERO_DEMANDS",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  "\u0027N\u0027",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  188,
+                        "Column":  "LEAS_RESIDENTIAL_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  189,
+                        "Column":  "LEAS_SHARED_TENANCY_FLAG",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  190,
+                        "Column":  "LEAS_SLM_STATUS",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  191,
+                        "Column":  "LEAS_EXT_REF2",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  192,
+                        "Column":  "LEAS_REC_ASSET_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  193,
+                        "Column":  "LEAS_DEFER_PROFIT_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  194,
+                        "Column":  "LEAS_UNGTD_RESID_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  195,
+                        "Column":  "LEAS_SUBLEASE_PL_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  196,
+                        "Column":  "LEAS_REC_INTEREST_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  197,
+                        "Column":  "LEAS_RESID_INTEREST_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  198,
+                        "Column":  "LEAS_AR_ACCRUAL_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  199,
+                        "Column":  "LEAS_AR_OFFSET_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  200,
+                        "Column":  "LEAS_LI_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  201,
+                        "Column":  "LEAS_RECON_LAST_RUN_DATE",
+                        "DataType":  "DATE",
+                        "MaxLength":  7,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  202,
+                        "Column":  "LEAS_REC_IMPAIR_EXP_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  203,
+                        "Column":  "LEAS_REC_TRANS_ADJ_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  204,
+                        "Column":  "LEAS_GASB_INCOME_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  205,
+                        "Column":  "LEAS_REC_REMEAS_PL_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  206,
+                        "Column":  "LEAS_DEMAND_NOTICE_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  207,
+                        "Column":  "LEAS_NON_RENT_INC_AC_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  208,
+                        "Column":  "LEAS_LI_REC_INDICATOR",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  20,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "QCID"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "CP_LEASE_LEASACSTANDAR",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_AC_STANDARD"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASACSTANDA_F",
+                        "Type":  "FUNCTION-BASED NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "SYS_NC00204$"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASDOCLANCOD",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_DOC_LAN_CODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASDOCLANCO_F",
+                        "Type":  "FUNCTION-BASED NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "SYS_NC00206$"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASREPORTCAT",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_REPORT_CAT_CODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASREPORTCA_F",
+                        "Type":  "FUNCTION-BASED NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "SYS_NC00205$"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASSTOPBYCOD",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_STOP_BY_CODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASSTOPBYCO_F",
+                        "Type":  "FUNCTION-BASED NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "SYS_NC00203$"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASTERICODE",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_TERI_CODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_LEASE_LEASTERICODE_F",
+                        "Type":  "FUNCTION-BASED NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "SYS_NC00202$"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI1",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_COMP_REF",
+                                           "LEAS_PROP_REF",
+                                           "LEAS_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI2",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI3",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_PROP_REF",
+                                           "LEAS_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI4",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_USAGE_CODE",
+                                           "LEAS_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI5",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_DMSE_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI6",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_TNNT_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI7",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_QUOT_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI8",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_RESIDENTIAL_FLAG"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASEI9",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_REF",
+                                           "LEAS_RESIDENTIAL_FLAG"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASE_PK",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "QCID"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "LEASINDI4",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LEAS_REF",
+                                           "LEAS_RCVE_FLAG",
+                                           "LEAS_STOPS_RCPT_DATE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  "SYS_C0089790",
+                                 "Column":  "LEAS_REF",
+                                 "Definition":  "\"LEAS_REF\" IS NOT NULL",
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             },
+                             {
+                                 "Name":  "SYS_C0089791",
+                                 "Column":  "LEAS_USAGE_CODE",
+                                 "Definition":  "\"LEAS_USAGE_CODE\" IS NOT NULL",
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  "FW_LEAS_A_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "FW_LEAS_B_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "PFL_LEAS_A_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+
+                                ],
+    "ReferencedBy_ChildTables":  [
+
+                                 ]
+}

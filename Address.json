@@ -1,0 +1,675 @@
+﻿{
+    "Table":  "Address",
+    "Schema":  "QUBEPFLLAB",
+    "Database":  null,
+    "ObjectId":  723647,
+    "Description":  null,
+    "CreateDate":  "2024-12-18",
+    "ModifyDate":  "2026-04-28",
+    "TableTotalRowCount":  4169,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "ADDR_REF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  32,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "ADDR_USAGE_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "ADDR_NAME",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  240,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "ADDR_PROP_NAME",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  240,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "ADDR_L1",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "ADDR_L2",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "ADDR_TOWN",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "ADDR_COUNTY",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "ADDR_POSTCODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  48,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "ADDR_PHONE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  80,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "ADDR_FAX",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  80,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "ADDR_VAT_NUM",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  100,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  13,
+                        "Column":  "ADDR_CDGN_VAT_CREF",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  14,
+                        "Column":  "ADDR_COUNTRY",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  120,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  15,
+                        "Column":  "ADDR_EMAIL",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  1280,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  16,
+                        "Column":  "ADDR_WEB",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  240,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  17,
+                        "Column":  "ADDR_STATUS_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  18,
+                        "Column":  "ADDR_COUNTRY_ISO_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  19,
+                        "Column":  "ADDR_AGENT_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  20,
+                        "Column":  "QCID",
+                        "DataType":  "NUMBER",
+                        "MaxLength":  22,
+                        "Precision":  8,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  21,
+                        "Column":  "ADDR_TERI_CODE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  12,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  22,
+                        "Column":  "ADDR_COMP_REG_NUM",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  100,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  23,
+                        "Column":  "SOURCE",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  4,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  24,
+                        "Column":  "ADDR_TAX_ID",
+                        "DataType":  "VARCHAR2",
+                        "MaxLength":  100,
+                        "Precision":  null,
+                        "Scale":  null,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "QCID"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "ADDRESSI1",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ADDR_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "ADDRESSI2",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ADDR_POSTCODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "ADDRESSI3",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ADDR_USAGE_CODE",
+                                           "ADDR_REF"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "ADDRESSI4",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ADDR_REF",
+                                           "ADDR_NAME",
+                                           "ADDR_TOWN"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "ADDRESS_PK",
+                        "Type":  "NORMAL",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "QCID"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_ADDRESS_ADDRTERICODE",
+                        "Type":  "NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ADDR_TERI_CODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "CP_ADDRESS_ADDRTERICODE_F",
+                        "Type":  "FUNCTION-BASED NORMAL",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "SYS_NC00024$"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  "SYS_C0091223",
+                                 "Column":  "ADDR_REF",
+                                 "Definition":  "\"ADDR_REF\" IS NOT NULL",
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             },
+                             {
+                                 "Name":  "SYS_C0091224",
+                                 "Column":  "ADDR_USAGE_CODE",
+                                 "Definition":  "\"ADDR_USAGE_CODE\" IS NOT NULL",
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  "FW_ADDR_A_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "FW_ADDR_B_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "FW_ADDR_C_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "PFL_ADDR_A_TRG",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+
+                                ],
+    "ReferencedBy_ChildTables":  [
+
+                                 ]
+}
