@@ -1,0 +1,4085 @@
+﻿{
+    "Table":  "ENTITY",
+    "Schema":  "dbo",
+    "Database":  "AIRWAVZ_P",
+    "ObjectId":  340196262,
+    "Description":  null,
+    "CreateDate":  "2026-01-08",
+    "ModifyDate":  "2026-07-14",
+    "TableTotalRowCount":  967,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "ENTITYID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "NAME",
+                        "DataType":  "nchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "ADDR1",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "ADDR2",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "ADDR3",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "STATE",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "CITY",
+                        "DataType":  "nchar",
+                        "MaxLength":  34,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "ZIPCODE",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "PHONE",
+                        "DataType":  "nchar",
+                        "MaxLength":  30,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "FEET",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "UNITS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "LASTDATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  13,
+                        "Column":  "USERID",
+                        "DataType":  "nchar",
+                        "MaxLength":  40,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  14,
+                        "Column":  "LEDGCODE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  15,
+                        "Column":  "CLOSEDAY",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  16,
+                        "Column":  "YEAREND",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  17,
+                        "Column":  "CURPED",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  18,
+                        "Column":  "MAXOPEN",
+                        "DataType":  "smallint",
+                        "MaxLength":  2,
+                        "Precision":  5,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  19,
+                        "Column":  "BASIS",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  20,
+                        "Column":  "PROJID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  21,
+                        "Column":  "INTRACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  22,
+                        "Column":  "GLPURGE",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  23,
+                        "Column":  "APACCTNO",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  24,
+                        "Column":  "OPENBAL",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  25,
+                        "Column":  "INVCSTAT",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  26,
+                        "Column":  "SUMDET",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  27,
+                        "Column":  "SUMCASH",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  28,
+                        "Column":  "CASHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  29,
+                        "Column":  "APPURGE",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  30,
+                        "Column":  "M_1099DATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  31,
+                        "Column":  "VATREG",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  32,
+                        "Column":  "ATAXACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  33,
+                        "Column":  "ATAXCASH",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  34,
+                        "Column":  "VENDPPED",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  35,
+                        "Column":  "PAYENTRY",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  36,
+                        "Column":  "TAXEXEMP",
+                        "DataType":  "nchar",
+                        "MaxLength":  24,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  37,
+                        "Column":  "SHIPADR1",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  38,
+                        "Column":  "SHIPADR2",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  39,
+                        "Column":  "SHIPADR3",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  40,
+                        "Column":  "SHIPCITY",
+                        "DataType":  "nchar",
+                        "MaxLength":  34,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  41,
+                        "Column":  "SHIPST",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  42,
+                        "Column":  "SHIPZIP",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  43,
+                        "Column":  "BILLADR1",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  44,
+                        "Column":  "BILLADR2",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  45,
+                        "Column":  "BILLADR3",
+                        "DataType":  "nchar",
+                        "MaxLength":  70,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  46,
+                        "Column":  "BILLCITY",
+                        "DataType":  "nchar",
+                        "MaxLength":  34,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  47,
+                        "Column":  "BILLST",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  48,
+                        "Column":  "BILLZIP",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  49,
+                        "Column":  "ACCTNUM",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  50,
+                        "Column":  "APPLIMIT",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  51,
+                        "Column":  "STATEID",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  52,
+                        "Column":  "PROPTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  53,
+                        "Column":  "PROPSUBTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  54,
+                        "Column":  "ACQUIRED",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  55,
+                        "Column":  "DISPOSED",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  56,
+                        "Column":  "INVESTFLAG",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  57,
+                        "Column":  "CLASSID",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  58,
+                        "Column":  "INVTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  59,
+                        "Column":  "LIFECODE",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  60,
+                        "Column":  "LOCAID",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  61,
+                        "Column":  "GROSSVALUE",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  62,
+                        "Column":  "NETVALUE",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  63,
+                        "Column":  "INCRET",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  64,
+                        "Column":  "CAPRET",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  65,
+                        "Column":  "TOTRET",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  66,
+                        "Column":  "JEDESCID",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  67,
+                        "Column":  "OPTED",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  68,
+                        "Column":  "CURRCODE",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  69,
+                        "Column":  "APREALEXCHG",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  70,
+                        "Column":  "APUNREEXCHG",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  71,
+                        "Column":  "CROSSCURYN",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  72,
+                        "Column":  "CMREALACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  73,
+                        "Column":  "CMUNREACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  74,
+                        "Column":  "CMDEPGLACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  75,
+                        "Column":  "RMTACCTNO",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  76,
+                        "Column":  "RMTCASHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  77,
+                        "Column":  "RMTOTHRFEE",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  78,
+                        "Column":  "TOGFEES",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  79,
+                        "Column":  "MINBAL",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  80,
+                        "Column":  "HELDFUNDS",
+                        "DataType":  "money",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  4,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  81,
+                        "Column":  "BADTAXACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  82,
+                        "Column":  "BADTAXCSHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  83,
+                        "Column":  "FIDTAXACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  84,
+                        "Column":  "FIDTAXCSHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  85,
+                        "Column":  "TOGACCTNUM",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  86,
+                        "Column":  "TOGCASHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  87,
+                        "Column":  "TOGVENDID",
+                        "DataType":  "nchar",
+                        "MaxLength":  20,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  88,
+                        "Column":  "OTRACCTNUM",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  89,
+                        "Column":  "OTRCASHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  90,
+                        "Column":  "OTRVENDID",
+                        "DataType":  "nchar",
+                        "MaxLength":  20,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  91,
+                        "Column":  "ENTTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  92,
+                        "Column":  "PERIODCNT",
+                        "DataType":  "smallint",
+                        "MaxLength":  2,
+                        "Precision":  5,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  93,
+                        "Column":  "RECLAIMPCT",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  94,
+                        "Column":  "ALTTAXID",
+                        "DataType":  "nchar",
+                        "MaxLength":  30,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  95,
+                        "Column":  "TAXSUSPENSE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  96,
+                        "Column":  "CMNBANKING",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  97,
+                        "Column":  "ARREALACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  98,
+                        "Column":  "ARUNREACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  99,
+                        "Column":  "RETAINACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  100,
+                        "Column":  "BILLFEES",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  101,
+                        "Column":  "FUNDBALACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  102,
+                        "Column":  "TAXRPTFREQ",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  103,
+                        "Column":  "OWNERID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  104,
+                        "Column":  "COUNTRY",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  105,
+                        "Column":  "APTAXSUSPENSEACCOUNTNUMBER",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  106,
+                        "Column":  "STLINEBASIS",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  107,
+                        "Column":  "MATRIXID",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  108,
+                        "Column":  "ENTMATRIXOPTION",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  109,
+                        "Column":  "NCREIFACQUIREDFIRSTDAYQTR",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  110,
+                        "Column":  "NCREIFDISPOSEDLASTDAYQTR",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  111,
+                        "Column":  "CHECKLOCATIONID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  112,
+                        "Column":  "MAXAPOPEN",
+                        "DataType":  "smallint",
+                        "MaxLength":  2,
+                        "Precision":  5,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  113,
+                        "Column":  "APREALLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  114,
+                        "Column":  "APUNREALLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  115,
+                        "Column":  "ARREALLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  116,
+                        "Column":  "ARUNREALLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  117,
+                        "Column":  "CMREALLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  118,
+                        "Column":  "CMUNREALLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  119,
+                        "Column":  "CMDEPLOSS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  120,
+                        "Column":  "VENDORWITHHOLDINGACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  121,
+                        "Column":  "SRVCDEBT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  122,
+                        "Column":  "SRVCCRED",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  123,
+                        "Column":  "RMSRVCDEBT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  124,
+                        "Column":  "RMSRVCCRED",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  125,
+                        "Column":  "IAENTTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  40,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  126,
+                        "Column":  "ACTIVE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__ENTITY__ACTIVE__153B1FDF",
+                        "DefaultValue":  "(N\u0027Y\u0027)",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  127,
+                        "Column":  "IAVENDORID",
+                        "DataType":  "nchar",
+                        "MaxLength":  20,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  128,
+                        "Column":  "IACORPORATEACCOUNTID",
+                        "DataType":  "nchar",
+                        "MaxLength":  24,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  129,
+                        "Column":  "CONNECTCURRCODE",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  130,
+                        "Column":  "SOFTCLOSEGL",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__ENTITY__SOFTCLOS__162F4418",
+                        "DefaultValue":  "(N\u0027N\u0027)",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  131,
+                        "Column":  "CISREGID",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  132,
+                        "Column":  "COUNTY",
+                        "DataType":  "nchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  133,
+                        "Column":  "ACCREXPACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  134,
+                        "Column":  "INTERENTITYREF",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  135,
+                        "Column":  "ActiveSegment",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__ENTITY__ActiveSe__17236851",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  136,
+                        "Column":  "SegmentAccountFilter",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__ENTITY__SegmentA__18178C8A",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  137,
+                        "Column":  "SegmentCustomFilter",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  138,
+                        "Column":  "TRAN_REPCURR",
+                        "DataType":  "nchar",
+                        "MaxLength":  6,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  139,
+                        "Column":  "TRAN_FXPL",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  140,
+                        "Column":  "TRAN_FXBS",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  141,
+                        "Column":  "REVALBASIS",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  142,
+                        "Column":  "FXPEXCHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  143,
+                        "Column":  "REVALBASISC",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  144,
+                        "Column":  "HISTORAVG",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  145,
+                        "Column":  "AVGEXCHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  149,
+                        "Column":  "REGREGION",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  10,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__ENTITY__REGREGIO__3D4AA7E7",
+                        "DefaultValue":  "(N\u0027@\u0027)",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "ENTITYID"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "ENT_INCLBASIS",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BASIS",
+                                           "ENTITYID"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "PROJID",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "PROJID"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "UPKCL_ENTITY",
+                        "Type":  "CLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ENTITYID"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  null,
+                                 "Column":  null,
+                                 "Definition":  null,
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  "tr_INTERENTITY_del",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "tr_INTERENTITY_ins",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     },
+                     {
+                         "Name":  "tr_INTERENTITY_upd",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+                                    {
+                                        "FkName":  "FK_ENTITY_IACORPORATEACCOUNTID_ACCOUNT",
+                                        "Column":  "IACORPORATEACCOUNTID",
+                                        "ParentReferencesTable":  "ACCOUNT",
+                                        "ParentReferencesColumn":  "ACCOUNTID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_CISREGID_AP_CIS_REGISTRATION",
+                                        "Column":  "CISREGID",
+                                        "ParentReferencesTable":  "AP_CIS_REGISTRATION",
+                                        "ParentReferencesColumn":  "ID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_STLINEBASIS_BTYP",
+                                        "Column":  "STLINEBASIS",
+                                        "ParentReferencesTable":  "BTYP",
+                                        "ParentReferencesColumn":  "BASIS",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_CLASSID_CLAS",
+                                        "Column":  "CLASSID",
+                                        "ParentReferencesTable":  "CLAS",
+                                        "ParentReferencesColumn":  "CLASSID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_COUNTRY_CTRY",
+                                        "Column":  "COUNTRY",
+                                        "ParentReferencesTable":  "CTRY",
+                                        "ParentReferencesColumn":  "COUNTRY",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_ATAXCASH_CTYP",
+                                        "Column":  "ATAXCASH",
+                                        "ParentReferencesTable":  "CTYP",
+                                        "ParentReferencesColumn":  "CASHTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_CASHTYPE_CTYP",
+                                        "Column":  "CASHTYPE",
+                                        "ParentReferencesTable":  "CTYP",
+                                        "ParentReferencesColumn":  "CASHTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_CONNECTCURRCODE_CURRCODE",
+                                        "Column":  "CONNECTCURRCODE",
+                                        "ParentReferencesTable":  "CURRCODE",
+                                        "ParentReferencesColumn":  "CURRCODE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_CURRCODE_CURRCODE",
+                                        "Column":  "CURRCODE",
+                                        "ParentReferencesTable":  "CURRCODE",
+                                        "ParentReferencesColumn":  "CURRCODE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_ENTTYPE_ENTTYPE",
+                                        "Column":  "ENTTYPE",
+                                        "ParentReferencesTable":  "ENTTYPE",
+                                        "ParentReferencesColumn":  "ENTTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_APTAXSUSPENSEACCOUNT",
+                                        "Column":  "APTAXSUSPENSEACCOUNTNUMBER",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_FUNDBALACCT_GACC",
+                                        "Column":  "FUNDBALACCT",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_RMSRVCCRED_GACC",
+                                        "Column":  "RMSRVCCRED",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_RMSRVCDEBT_GACC",
+                                        "Column":  "RMSRVCDEBT",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_SRVCCRED_GACC",
+                                        "Column":  "SRVCCRED",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_SRVCDEBT_GACC",
+                                        "Column":  "SRVCDEBT",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_VENDORWITHHOLDINGACCT_GACC",
+                                        "Column":  "VENDORWITHHOLDINGACCT",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_LEDGCODE_GLCD",
+                                        "Column":  "LEDGCODE",
+                                        "ParentReferencesTable":  "GLCD",
+                                        "ParentReferencesColumn":  "LEDGCODE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_INVTYPE_ITYP",
+                                        "Column":  "INVTYPE",
+                                        "ParentReferencesTable":  "ITYP",
+                                        "ParentReferencesColumn":  "INVTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_LIFECODE_LIFE",
+                                        "Column":  "LIFECODE",
+                                        "ParentReferencesTable":  "LIFE",
+                                        "ParentReferencesColumn":  "LIFECODE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_LOCAID_LOCA",
+                                        "Column":  "LOCAID",
+                                        "ParentReferencesTable":  "LOCA",
+                                        "ParentReferencesColumn":  "LOCAID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_PROJID_PROJ",
+                                        "Column":  "PROJID",
+                                        "ParentReferencesTable":  "PROJ",
+                                        "ParentReferencesColumn":  "PROJID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_PROPSUBTYPE_PSUB",
+                                        "Column":  "PROPTYPE",
+                                        "ParentReferencesTable":  "PSUB",
+                                        "ParentReferencesColumn":  "PROPTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_PROPSUBTYPE_PSUB",
+                                        "Column":  "PROPSUBTYPE",
+                                        "ParentReferencesTable":  "PSUB",
+                                        "ParentReferencesColumn":  "PROPSUBTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_PROPTYPE_PTYP",
+                                        "Column":  "PROPTYPE",
+                                        "ParentReferencesTable":  "PTYP",
+                                        "ParentReferencesColumn":  "PROPTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_STATEID_STATE",
+                                        "Column":  "STATEID",
+                                        "ParentReferencesTable":  "STATE",
+                                        "ParentReferencesColumn":  "STATE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_CHECKLOCATIONID_TB_A",
+                                        "Column":  "CHECKLOCATIONID",
+                                        "ParentReferencesTable":  "TB_AP_CHECKPRINTLOC",
+                                        "ParentReferencesColumn":  "CHECKLOCATIONID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_ENTITY_MATRIXID_TB_AP_DATEM",
+                                        "Column":  "MATRIXID",
+                                        "ParentReferencesTable":  "TB_AP_DATEMATRIX",
+                                        "ParentReferencesColumn":  "MATRIXID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    }
+                                ],
+    "ReferencedBy_ChildTables":  [
+                                     {
+                                         "FkName":  "FK_ACHBATCH_ENTITYID_ENTITY",
+                                         "ChildTable":  "ACHBATCH",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITYACCOUNTFILTER_ENTITYID_ENTITY",
+                                         "ChildTable":  "ADVGL_ENTITYACTFLTR",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ADVGL_SEGENTFLTR_EntityId_ENTITY",
+                                         "ChildTable":  "ADVGL_SEGENTFLTR",
+                                         "ChildColumn":  "EntityId",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ALLO_ENTITYID_ENTITY",
+                                         "ChildTable":  "ALLO",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ALTACCTBAL_ENTITYID_ENTITY",
+                                         "ChildTable":  "ALTACCTBAL",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_AP_CHECK_STAGECHECK_ENTITYID_ENTITY",
+                                         "ChildTable":  "AP_CHECK_STAGECHECK",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARCANR_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARCANR",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARCHEK_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARCHEK",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARENTITYEX_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARENTITYEX",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARLEDG_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARLEDG",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARLEDGAPPLY_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARLEDGAPPLY",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARMISC_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARMISC",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARRCPT_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARRCPT",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARRECPT_ENTITYID_ENTITY",
+                                         "ChildTable":  "ARRECPT",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ASSUMPHDR_ENTITYID_ENTITY",
+                                         "ChildTable":  "ASSUMPHDR",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANK_ENTITYID_ENTITY",
+                                         "ChildTable":  "BANK",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANKTRANSFERS_FROMENTITYID_",
+                                         "ChildTable":  "BANKTRANSFERS",
+                                         "ChildColumn":  "FROMENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANKTRANSFERS_TOENTITYID_EN",
+                                         "ChildTable":  "BANKTRANSFERS",
+                                         "ChildColumn":  "TOENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BLDG_ENTITYID_ENTITY",
+                                         "ChildTable":  "BLDG",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BMAP_ENTITYID_ENTITY",
+                                         "ChildTable":  "BMAP",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BUDGETS_ENTITYID_ENTITY",
+                                         "ChildTable":  "BUDGETS",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_CRECONTTRANSITION_ENTITYID_ENTITY",
+                                         "ChildTable":  "CRECONTTRANSITION",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_CREPROPERTY_ENTITYID_ENTITY",
+                                         "ChildTable":  "CREPROPERTY",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_EFTBATCH_ENTITYID_ENTITY",
+                                         "ChildTable":  "EFTBATCH",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITYACCTGRPS_ENTITYID_ENT",
+                                         "ChildTable":  "ENTITYACCTGRPS",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_EXPCTRLSUM_ENTITYID_ENTITY",
+                                         "ChildTable":  "EXPCTRLSUM",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_FA_ASSETCODE_ENTITYID_ENTITY",
+                                         "ChildTable":  "FA_ASSETCODE",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_FA_ENTITYTOBOOKMAP_ENTITYID_ENTITY",
+                                         "ChildTable":  "FA_ENTITYTOBOOKMAP",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_FUNDBAL_ENTITYID_ENTITY",
+                                         "ChildTable":  "FUNDBAL",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GHIS_ENTITYID_ENTITY",
+                                         "ChildTable":  "GHIS",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GL_DigitalTaxDetail_EntityId_ENTITY",
+                                         "ChildTable":  "GL_DigitalTaxDetail",
+                                         "ChildColumn":  "EntityId",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLSUM_ENTITYID_ENTITY",
+                                         "ChildTable":  "GLSUM",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLSUM_JC_ENTITYID_ENTITY",
+                                         "ChildTable":  "GLSUM_JC",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLSUMWithSegments_ENTITYID_ENTITY",
+                                         "ChildTable":  "GLSUMWithSegments",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GNAM_ENTITYID_ENTITY",
+                                         "ChildTable":  "GNAM",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GPRI_ENTITYID_ENTITY",
+                                         "ChildTable":  "GPRI",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GSTD_ENTITYID_ENTITY",
+                                         "ChildTable":  "GSTD",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_HIST_ENTITYID_ENTITY",
+                                         "ChildTable":  "HIST",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JC_BILLAPPL_ENTITYID_ENTITY",
+                                         "ChildTable":  "JC_BILLAPPL",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JOURNAL_ENTITYID_ENTITY",
+                                         "ChildTable":  "JOURNAL",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_PERIOD_ENTITYID_ENTITY",
+                                         "ChildTable":  "PERIOD",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_RECC_ENTITYID_ENTITY",
+                                         "ChildTable":  "RECC",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_SCHK_ENTITYID_ENTITY",
+                                         "ChildTable":  "SCHK",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_SELCHK_BORENTITYID_ENTITY",
+                                         "ChildTable":  "SELCHK",
+                                         "ChildColumn":  "BORENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_SESS_ENTITYID_ENTITY",
+                                         "ChildTable":  "SESS",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_T_199PAYERS_ENTITYID_ENTITY",
+                                         "ChildTable":  "T_199PAYERS",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_T_199WKSH_ENTITYID_ENTITY",
+                                         "ChildTable":  "T_199WKSH",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_ALLOCATIONDEST_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_ALLOCATIONDEST",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_ALLOCATIONRULE_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_ALLOCATIONRULE",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_BUDENTLINK_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_BUDENTLINK",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_BUDGET_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_BUDGET",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GETGLINCHYEAR_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_GETGLINCHYEAR",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "CASCADE",
+                                         "UpdateAction":  "CASCADE",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLACTASSUMP_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_GLACTASSUMP",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_MARKETASSUMP_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_MARKETASSUMP",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_MODIFYENTITY_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_MODIFYENTITY",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "CASCADE",
+                                         "UpdateAction":  "CASCADE",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_POOLENTITY_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_POOLENTITY",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_WORKBOOK_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_BF_WORKBOOK",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_CM_BADDEBTRESERVE_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_CM_BADDEBTRESERVE",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_IRV_FCTOPEN_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_IRV_FCTOPEN",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_IRV_JRNLZ_ENTITYID_ENTITY",
+                                         "ChildTable":  "TB_IRV_JRNLZ",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_JC_LOANDTL_ENTITYID_ENTI",
+                                         "ChildTable":  "TB_JC_LOANDTL",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TRADEPARTNERENTITY_ENTITYID",
+                                         "ChildTable":  "TRADEPARTNERENTITY",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_UNFUNDEDITEMS_ACTENTITY_ENT",
+                                         "ChildTable":  "UNFUNDEDITEMS",
+                                         "ChildColumn":  "ACTENTITY",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_UNFUNDEDITEMS_BORENTITYID_E",
+                                         "ChildTable":  "UNFUNDEDITEMS",
+                                         "ChildColumn":  "BORENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     }
+                                 ]
+}

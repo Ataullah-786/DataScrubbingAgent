@@ -1,0 +1,422 @@
+﻿{
+    "Table":  "BMAP",
+    "Schema":  "dbo",
+    "Database":  "AIRWAVZ_P",
+    "ObjectId":  1751677288,
+    "Description":  null,
+    "CreateDate":  "2026-01-08",
+    "ModifyDate":  "2026-03-10",
+    "TableTotalRowCount":  967,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "ENTITYID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK",
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "CASHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  4,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK",
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "BANKID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "ACCTNUM",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "DISCACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "REMIT",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "APACCTNUM",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "CMNBANKID",
+                        "DataType":  "nchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "RETAINACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "VENDORWITHHOLDINGACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "ACCREXPACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  "UPKCL_BMAP",
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "ENTITYID"
+                                       },
+                                       {
+                                           "Order":  2,
+                                           "Column":  "CASHTYPE"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "IX_BMAP_BANKID",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BANKID"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "UPKCL_BMAP",
+                        "Type":  "CLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ENTITYID",
+                                           "CASHTYPE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  null,
+                                 "Column":  null,
+                                 "Definition":  null,
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  null,
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+                                    {
+                                        "FkName":  "FK_BMAP_CASHTYPE_CTYP",
+                                        "Column":  "CASHTYPE",
+                                        "ParentReferencesTable":  "CTYP",
+                                        "ParentReferencesColumn":  "CASHTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_BMAP_ENTITYID_ENTITY",
+                                        "Column":  "ENTITYID",
+                                        "ParentReferencesTable":  "ENTITY",
+                                        "ParentReferencesColumn":  "ENTITYID",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_BMAP_ACCTNUM_GACC",
+                                        "Column":  "ACCTNUM",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_BMAP_DISCACCT_GACC",
+                                        "Column":  "DISCACCT",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_BMAP_VENDORWITHHOLDINGACCT_GACC",
+                                        "Column":  "VENDORWITHHOLDINGACCT",
+                                        "ParentReferencesTable":  "GACC",
+                                        "ParentReferencesColumn":  "ACCTNUM",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    }
+                                ],
+    "ReferencedBy_ChildTables":  [
+                                     {
+                                         "FkName":  "FK_HIST_CASHTYPE_BMAP",
+                                         "ChildTable":  "HIST",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_HIST_CASHTYPE_BMAP",
+                                         "ChildTable":  "HIST",
+                                         "ChildColumn":  "CASHTYPE",
+                                         "ParentColumn":  "CASHTYPE",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JC_MAP_CASHTYPE_BMAP",
+                                         "ChildTable":  "JC_MAP",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JC_MAP_CASHTYPE_BMAP",
+                                         "ChildTable":  "JC_MAP",
+                                         "ChildColumn":  "CASHTYPE",
+                                         "ParentColumn":  "CASHTYPE",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_RECC_CASHTYPE_BMAP",
+                                         "ChildTable":  "RECC",
+                                         "ChildColumn":  "ENTITYID",
+                                         "ParentColumn":  "ENTITYID",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_RECC_CASHTYPE_BMAP",
+                                         "ChildTable":  "RECC",
+                                         "ChildColumn":  "CASHTYPE",
+                                         "ParentColumn":  "CASHTYPE",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     }
+                                 ]
+}

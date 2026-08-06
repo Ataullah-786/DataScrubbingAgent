@@ -1,0 +1,1354 @@
+﻿{
+    "Table":  "GACC",
+    "Schema":  "dbo",
+    "Database":  "AIRWAVZ_P",
+    "ObjectId":  740197687,
+    "Description":  null,
+    "CreateDate":  "2026-01-08",
+    "ModifyDate":  "2026-07-06",
+    "TableTotalRowCount":  376,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "ACCTNUM",
+                        "DataType":  "nchar",
+                        "MaxLength":  18,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "ACCTNAME",
+                        "DataType":  "nchar",
+                        "MaxLength":  50,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "TYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "LASTDATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "USERID",
+                        "DataType":  "nchar",
+                        "MaxLength":  40,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "M_1099ACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "DPRSTR",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "PEXCHTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "OWNERTAX",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "SUBWITH",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "ACCTBASIS",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "FK"
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "LEGALACCT",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  13,
+                        "Column":  "ACTIVE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__GACC__ACTIVE__2D12A970",
+                        "DefaultValue":  "(N\u0027Y\u0027)",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  14,
+                        "Column":  "REVACCTTYPE",
+                        "DataType":  "nchar",
+                        "MaxLength":  2,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "SQL_Latin1_General_CP1_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__GACC__REVACCTTYP__2E06CDA9",
+                        "DefaultValue":  "(N\u0027N\u0027)",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "ACCTNUM"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "UPKCL_GACC",
+                        "Type":  "CLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "ACCTNUM"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  null,
+                                 "Column":  null,
+                                 "Definition":  null,
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  null,
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+                                    {
+                                        "FkName":  "FK_GACC_ACCTBASIS_BTYP",
+                                        "Column":  "ACCTBASIS",
+                                        "ParentReferencesTable":  "BTYP",
+                                        "ParentReferencesColumn":  "BASIS",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_GACC_OWNERTAX_OWNERTAX",
+                                        "Column":  "OWNERTAX",
+                                        "ParentReferencesTable":  "OWNERTAX",
+                                        "ParentReferencesColumn":  "OWNERTAX",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    },
+                                    {
+                                        "FkName":  "FK_GACC_PEXCHTYPE_PEXCHTYPE",
+                                        "Column":  "PEXCHTYPE",
+                                        "ParentReferencesTable":  "PEXCHTYPE",
+                                        "ParentReferencesColumn":  "EXCHTYPE",
+                                        "DeleteAction":  "NO_ACTION",
+                                        "UpdateAction":  "NO_ACTION",
+                                        "IsDisabled":  false,
+                                        "IsNotTrusted":  false
+                                    }
+                                ],
+    "ReferencedBy_ChildTables":  [
+                                     {
+                                         "FkName":  "FK_ACCTRULEDTL_ACCTNUM_GACC",
+                                         "ChildTable":  "ACCTRULEDTL",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITYACCOUNTFILTER_ACCOUNTNUMBER_GACC",
+                                         "ChildTable":  "ADVGL_ENTITYACTFLTR",
+                                         "ChildColumn":  "ACCOUNTNUMBER",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARENTITYEX_ACREDTAC_GACC",
+                                         "ChildTable":  "ARENTITYEX",
+                                         "ChildColumn":  "ACREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARENTITYEX_ADEBITAC_GACC",
+                                         "ChildTable":  "ARENTITYEX",
+                                         "ChildColumn":  "ADEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARENTITYEX_CCREDTAC_GACC",
+                                         "ChildTable":  "ARENTITYEX",
+                                         "ChildColumn":  "CCREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARENTITYEX_CDEBITAC_GACC",
+                                         "ChildTable":  "ARENTITYEX",
+                                         "ChildColumn":  "CDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARGLMT_ACREDTAC_GACC",
+                                         "ChildTable":  "ARGLMT",
+                                         "ChildColumn":  "ACREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARGLMT_ADEBITAC_GACC",
+                                         "ChildTable":  "ARGLMT",
+                                         "ChildColumn":  "ADEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARGLMT_CCREDTAC_GACC",
+                                         "ChildTable":  "ARGLMT",
+                                         "ChildColumn":  "CCREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ARGLMT_CDEBITAC_GACC",
+                                         "ChildTable":  "ARGLMT",
+                                         "ChildColumn":  "CDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ASSUMPHDR_ACCTNUM_GACC",
+                                         "ChildTable":  "ASSUMPHDR",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_AVIDXOPTION_SHIPACCTNUM_GAC",
+                                         "ChildTable":  "AVIDXOPTION",
+                                         "ChildColumn":  "SHIPACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_AVIDXSHIPACCT_ACCTNUM_GACC",
+                                         "ChildTable":  "AVIDXSHIPACCT",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANKRECADJTYPE_CRDACCTNUM_G",
+                                         "ChildTable":  "BANKRECADJTYPE",
+                                         "ChildColumn":  "CRDACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANKRECADJTYPE_DBTACCTNUM_G",
+                                         "ChildTable":  "BANKRECADJTYPE",
+                                         "ChildColumn":  "DBTACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANKTRANSFERS_TOACCTNUM_GAC",
+                                         "ChildTable":  "BANKTRANSFERS",
+                                         "ChildColumn":  "TOACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BANKTRANSFERS_FROMACCTNUM_G",
+                                         "ChildTable":  "BANKTRANSFERS",
+                                         "ChildColumn":  "FROMACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BMAP_DISCACCT_GACC",
+                                         "ChildTable":  "BMAP",
+                                         "ChildColumn":  "DISCACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BMAP_ACCTNUM_GACC",
+                                         "ChildTable":  "BMAP",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BMAP_VENDORWITHHOLDINGACCT_GACC",
+                                         "ChildTable":  "BMAP",
+                                         "ChildColumn":  "VENDORWITHHOLDINGACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_BUDGETS_ACCTNUM_GACC",
+                                         "ChildTable":  "BUDGETS",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_CMNONT_ACCTNUM_GACC",
+                                         "ChildTable":  "CMNONT",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_APTAXSUSPENSEACCOUNT",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "APTAXSUSPENSEACCOUNTNUMBER",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_SRVCDEBT_GACC",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "SRVCDEBT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_VENDORWITHHOLDINGACCT_GACC",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "VENDORWITHHOLDINGACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_SRVCCRED_GACC",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "SRVCCRED",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_RMSRVCDEBT_GACC",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "RMSRVCDEBT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_RMSRVCCRED_GACC",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "RMSRVCCRED",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITY_FUNDBALACCT_GACC",
+                                         "ChildTable":  "ENTITY",
+                                         "ChildColumn":  "FUNDBALACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTITYACCTGRPS_ACCTNUM_GACC",
+                                         "ChildTable":  "ENTITYACCTGRPS",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_ENTYATAX_APTAXSUSPENSEACCOU",
+                                         "ChildTable":  "ENTYATAX",
+                                         "ChildColumn":  "APTAXSUSPENSEACCOUNTNUMBER",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_EXPCTRLSUM_ACCTNUM_GACC",
+                                         "ChildTable":  "EXPCTRLSUM",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GHIS_ACCTNUM_GACC",
+                                         "ChildTable":  "GHIS",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GL_VARIANCENOTE_AccountNumber_GACC",
+                                         "ChildTable":  "GL_VARIANCENOTE",
+                                         "ChildColumn":  "AccountNumber",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLBLDG_UCREDTAC_GACC",
+                                         "ChildTable":  "GLBLDG",
+                                         "ChildColumn":  "UCREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLBLDG_UDEBITAC_GACC",
+                                         "ChildTable":  "GLBLDG",
+                                         "ChildColumn":  "UDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLMT_UCREDTAC_GACC",
+                                         "ChildTable":  "GLMT",
+                                         "ChildColumn":  "UCREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLMT_UDEBITAC_GACC",
+                                         "ChildTable":  "GLMT",
+                                         "ChildColumn":  "UDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK__GLSEGMENT__Accou__4AEEBBC8",
+                                         "ChildTable":  "GLSEGMENT_BLDG_ACT_FLTR",
+                                         "ChildColumn":  "AccountNumber",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "CASCADE",
+                                         "UpdateAction":  "CASCADE",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK__GLSEGMENT__Accou__4FB370E5",
+                                         "ChildTable":  "GLSEGMENT_LEAS_ACT_FLTR",
+                                         "ChildColumn":  "AccountNumber",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "CASCADE",
+                                         "UpdateAction":  "CASCADE",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLSUM_ACCTNUM_GACC",
+                                         "ChildTable":  "GLSUM",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GLSUMWithSegments_ACCTNUM_GACC",
+                                         "ChildTable":  "GLSUMWithSegments",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GMAP_ACCTNUM_GACC",
+                                         "ChildTable":  "GMAP",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GMAP_NACCTNUM_GACC",
+                                         "ChildTable":  "GMAP",
+                                         "ChildColumn":  "NACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GPRI_ACCTNUM_GACC",
+                                         "ChildTable":  "GPRI",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GRET_ACCTNUM_GACC",
+                                         "ChildTable":  "GRET",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_GSTD_ACCTNUM_GACC",
+                                         "ChildTable":  "GSTD",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_HIST_ACCTNUM_GACC",
+                                         "ChildTable":  "HIST",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JC_COSTCD_ACCTNUM_GACC",
+                                         "ChildTable":  "JC_COSTCD",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JC_MAP_ACCTNUM_GACC",
+                                         "ChildTable":  "JC_MAP",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_JOURNAL_ACCTNUM_GACC",
+                                         "ChildTable":  "JOURNAL",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_SELCHK_BORACCTNUM_GACC",
+                                         "ChildTable":  "SELCHK",
+                                         "ChildColumn":  "BORACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_ALLOCATIONDEST_ACCOUNT_GACC",
+                                         "ChildTable":  "TB_BF_ALLOCATIONDEST",
+                                         "ChildColumn":  "ACCOUNT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_ALLOCATIONRULE_ACCOUNT_GACC",
+                                         "ChildTable":  "TB_BF_ALLOCATIONRULE",
+                                         "ChildColumn":  "ACCOUNT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_BUDGETNOTE_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_BUDGETNOTE",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_BUILDING_MGMTACC_GACC",
+                                         "ChildTable":  "TB_BF_BUILDING",
+                                         "ChildColumn":  "MGMTACC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_CF_BUILDING_MGMTACC_GACC",
+                                         "ChildTable":  "TB_BF_CF_BUILDING",
+                                         "ChildColumn":  "MGMTACC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_CLSSCOSTTURN_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_CLSSCOSTTURN",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_CM_CALC_VIEW_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_CM_CALC_VIEW",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLBCLSSCPT_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_GLBCLSSCPT",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLBLAMENCPT_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_GLBLAMENCPT",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLBPROPCLSSCPT_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_GLBPROPCLSSCPT",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLINTERFACEEXC_ACREDTAC_GACC",
+                                         "ChildTable":  "TB_BF_GLINTERFACEEXC",
+                                         "ChildColumn":  "ACREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLINTERFACEEXC_ADEBITAC_GACC",
+                                         "ChildTable":  "TB_BF_GLINTERFACEEXC",
+                                         "ChildColumn":  "ADEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLINTERFACEEXC_CCREDTAC_GACC",
+                                         "ChildTable":  "TB_BF_GLINTERFACEEXC",
+                                         "ChildColumn":  "CCREDTAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLINTERFACEEXC_UCREDITAC_GACC",
+                                         "ChildTable":  "TB_BF_GLINTERFACEEXC",
+                                         "ChildColumn":  "UCREDITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLINTERFACEEXC_UDEBITAC_GACC",
+                                         "ChildTable":  "TB_BF_GLINTERFACEEXC",
+                                         "ChildColumn":  "UDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLINTERFACEEXC_CDEBITAC_GACC",
+                                         "ChildTable":  "TB_BF_GLINTERFACEEXC",
+                                         "ChildColumn":  "CDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLOBALCOSTTURN_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_GLOBALCOSTTURN",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_GLVIEW_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_GLVIEW",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_LCOSTACCTMAP_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_LCOSTACCTMAP",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_LEASECOSTS_GLACCOUNT_GACC",
+                                         "ChildTable":  "TB_BF_LEASECOSTS",
+                                         "ChildColumn":  "GLACCOUNT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_PAMENCPT_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_PAMENCPT",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_PROPCALCVIEW_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_PROPCALCVIEW",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_PROPCOSTTURN_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_PROPCOSTTURN",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RM_CALC_VIEW_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_RM_CALC_VIEW",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMGLBLDG_ACREDITAC_GACC",
+                                         "ChildTable":  "TB_BF_RMGLBLDG",
+                                         "ChildColumn":  "ACREDITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMGLBLDG_ADEBITAC_GACC",
+                                         "ChildTable":  "TB_BF_RMGLBLDG",
+                                         "ChildColumn":  "ADEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMGLBLDG_CCREDITAC_GACC",
+                                         "ChildTable":  "TB_BF_RMGLBLDG",
+                                         "ChildColumn":  "CCREDITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMGLBLDG_CDEBITAC_GACC",
+                                         "ChildTable":  "TB_BF_RMGLBLDG",
+                                         "ChildColumn":  "CDEBITAC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMMGMTACCEXEMP_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_RMMGMTACCEXEMP",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMPROP_LOSSCREDITACC_GACC",
+                                         "ChildTable":  "TB_BF_RMPROP",
+                                         "ChildColumn":  "LOSSCREDITACC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMPROP_LOSSDEBITACC_GACC",
+                                         "ChildTable":  "TB_BF_RMPROP",
+                                         "ChildColumn":  "LOSSDEBITACC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMPROP_BADDEBTACCT_GACC",
+                                         "ChildTable":  "TB_BF_RMPROP",
+                                         "ChildColumn":  "BADDEBTACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_RMPROP_MGMTACC_GACC",
+                                         "ChildTable":  "TB_BF_RMPROP",
+                                         "ChildColumn":  "MGMTACC",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_SPECCOSTS_GLACCOUNT_GACC",
+                                         "ChildTable":  "TB_BF_SPECCOSTS",
+                                         "ChildColumn":  "GLACCOUNT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_SUITECALCVIEW_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_SUITECALCVIEW",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_UNITCALCVIEW_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_UNITCALCVIEW",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_BF_UNITCOSTTURN_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_BF_UNITCOSTTURN",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_CM_BADDEBTDEFAULT_CREDITACCT_GACC",
+                                         "ChildTable":  "TB_CM_BADDEBTDEFAULT",
+                                         "ChildColumn":  "CREDITACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_CM_BADDEBTDEFAULT_DEBITACCT_GACC",
+                                         "ChildTable":  "TB_CM_BADDEBTDEFAULT",
+                                         "ChildColumn":  "DEBITACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_CM_BADDEBTRESERVE_ACCOUNTNUM_GACC",
+                                         "ChildTable":  "TB_CM_BADDEBTRESERVE",
+                                         "ChildColumn":  "CREDITACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_CM_BADDEBTRESERVE_CREDITACCT_GACC",
+                                         "ChildTable":  "TB_CM_BADDEBTRESERVE",
+                                         "ChildColumn":  "CREDITACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_CM_BADDEBTRESERVE_DEBITACCT_GACC",
+                                         "ChildTable":  "TB_CM_BADDEBTRESERVE",
+                                         "ChildColumn":  "DEBITACCT",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_IRV_FCTOPEN_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_IRV_FCTOPEN",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_TB_IRV_JRNLZ_ACCTNUM_GACC",
+                                         "ChildTable":  "TB_IRV_JRNLZ",
+                                         "ChildColumn":  "ACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     },
+                                     {
+                                         "FkName":  "FK_UNFUNDEDITEMS_BORACCTNUM_GA",
+                                         "ChildTable":  "UNFUNDEDITEMS",
+                                         "ChildColumn":  "BORACCTNUM",
+                                         "ParentColumn":  "ACCTNUM",
+                                         "DeleteAction":  "NO_ACTION",
+                                         "UpdateAction":  "NO_ACTION",
+                                         "IsDisabled":  false,
+                                         "IsNotTrusted":  false
+                                     }
+                                 ]
+}
