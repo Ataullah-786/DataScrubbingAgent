@@ -134,6 +134,17 @@ These fields are populated by the conversion process and must carry a fixed valu
 
 Report an **Error** where a value does not conform to the stated format.
 
+### External References — Availability
+
+Not every table referenced by this worksheet is held in this repository. Before
+reporting a referential issue, check whether the referenced table can actually be
+validated. Never state that a reference is valid or invalid when the referenced data
+is not available.
+
+| Referenced | Used By | Held In This Repo? | How To Validate |
+| ---------- | ------- | ------------------ | --------------- |
+| `ENTITY.LEDGCODE` | `ACCTNUM` | **Yes** — `/PMX/Rules/ENTITY.md` | Validate against the supplied `ENTITY` file when one is provided (**Error** if the value is not present). Otherwise **Warning / REQUIRES DATABASE VERIFICATION**. |
+
 ### Other Field Notes
 
 Remaining guidance carried over from the worksheet.

@@ -119,6 +119,25 @@ database, report a **Warning / REQUIRES DATABASE VERIFICATION**.
 | `VENDORWITHHOLDINGACCT` | `GACC.ACCTNUM` |
 | `ACCREXPACCT` | `GACC.ACCTNUM` |
 
+### External References — Availability
+
+Not every table referenced by this worksheet is held in this repository. Before
+reporting a referential issue, check whether the referenced table can actually be
+validated. Never state that a reference is valid or invalid when the referenced data
+is not available.
+
+| Referenced | Used By | Held In This Repo? | How To Validate |
+| ---------- | ------- | ------------------ | --------------- |
+| `BANK.BANKID` | `BANKID`, `CMNBANKID` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+| `CTYP.CASHTYPE` | `CASHTYPE` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+| `ENTITY.ENTITYID` | `ENTITYID` | **Yes** — `/PMX/Rules/ENTITY.md` | Validate against the supplied `ENTITY` file when one is provided (**Error** if the value is not present). Otherwise **Warning / REQUIRES DATABASE VERIFICATION**. |
+| `GACC.ACCTNUM` | `ACCREXPACCT`, `ACCTNUM`, `APACCTNUM`, `DISCACCT`, `RETAINACCT`, `VENDORWITHHOLDINGACCT` | **Yes** — `/PMX/Rules/GACC.md` | Validate against the supplied `GACC` file when one is provided (**Error** if the value is not present). Otherwise **Warning / REQUIRES DATABASE VERIFICATION**. |
+
+> **Note:** `BANK`, `CTYP` are referenced by this worksheet but are **not** supported
+> tables in this repository — there are no schema or rules files for them. Any
+> check against them requires access to the target database and must be reported
+> as `REQUIRES DATABASE VERIFICATION`.
+
 ---
 
 ## Source Notes
