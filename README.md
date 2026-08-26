@@ -382,6 +382,7 @@ Known load orders:
 | Product | Load Order | Because |
 |---|---|---|
 | Angus | Area → Tenant → Contact | Tenant floors/suites resolve against Area; Contact tenants resolve against Tenant |
+| EVO | FASSET → F_TASKS | PPM `Asset Code` resolves against an existing asset record |
 | PMX | GACC → ENTITY → BMAP | BMAP account numbers resolve against GACC; BMAP entities resolve against ENTITY |
 
 For any product or table not listed above, work the order out from the rules files rather
