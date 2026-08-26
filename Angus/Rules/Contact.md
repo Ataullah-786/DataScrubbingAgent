@@ -143,6 +143,25 @@ and `Is COI Subscribed` must contain either `X` / `x` or be blank. Any other val
   database access this cannot be confirmed — report as
   **Warning / REQUIRES DATABASE VERIFICATION**.
 
+### External References — Availability
+
+Not every entity referenced by this worksheet is held in this repository. Before
+reporting a referential issue, check whether the reference can actually be validated.
+Never state that a reference is valid or invalid when the referenced data is not
+available.
+
+| Referenced | Used By | Held In This Repo? | How To Validate |
+| ---------- | ------- | ------------------ | --------------- |
+| Tenant worksheet | `Tenant Company Name` | **Yes** — `/Angus/Rules/Tenant.md` | Validate against the supplied Tenant file when one is provided (**Error** if the value is not present). Otherwise **Warning / REQUIRES DATABASE VERIFICATION**. |
+| Area worksheet | `Floor Name`, `Suite/Location Name` | **Yes** — `/Angus/Rules/Area.md` | Validate against the supplied Area file when one is provided (**Error** if the value is not present). Otherwise **Warning / REQUIRES DATABASE VERIFICATION**. |
+| Property (MRI Angus) | `Property Name` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+| Building (MRI Angus) | `Building Name` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+
+> **Note:** Property and Building are referenced by this worksheet but are **not**
+> supported tables in this repository — there are no schema or rules files for them.
+> Any check against them requires access to the target database and must be reported
+> as `REQUIRES DATABASE VERIFICATION`.
+
 ---
 
 ## Sample Data (from the collection sheet)

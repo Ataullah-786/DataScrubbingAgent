@@ -461,6 +461,22 @@ database, report a **Warning / REQUIRES DATABASE VERIFICATION**.
 | -------------------- | ---------- |
 | `PROJID` | `PROJ.PROJID` |
 
+### External References — Availability
+
+Not every table referenced by this worksheet is held in this repository. Before
+reporting a referential issue, check whether the referenced table can actually be
+validated. Never state that a reference is valid or invalid when the referenced data
+is not available.
+
+| Referenced | Used By | Held In This Repo? | How To Validate |
+| ---------- | ------- | ------------------ | --------------- |
+| `PROJ.PROJID` | `PROJID` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+
+> **Note:** `PROJ` is referenced by this worksheet but is **not** a supported
+> table in this repository — there is no schema or rules file for it. Any check
+> against it requires access to the target database and must be reported as
+> `REQUIRES DATABASE VERIFICATION`.
+
 ### Other Field Notes
 
 Remaining guidance carried over from the worksheet.

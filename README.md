@@ -725,6 +725,59 @@ It should not modify, overwrite, or transform the uploaded file unless the user 
 
 If a validation cannot be performed using the uploaded file and available schema information, clearly state the limitation.
 
+### Rule 11 — Check Reference Availability Before Reporting a Referential Issue
+
+A rules file may state that a field "must match" another table. That referenced table is
+**not necessarily held in this repository**.
+
+Before reporting on any cross-reference, the agent must first establish which of the
+following applies:
+
+| Situation | Severity |
+| --------- | -------- |
+| The referenced table has a rules/schema file **and** the corresponding data file was supplied by the user | **Error** if the value is not found |
+| The referenced table has a rules/schema file but no data file was supplied | **Warning** — `REQUIRES DATABASE VERIFICATION` |
+| The referenced table has **no** rules or schema file in this repository | **Warning** — `REQUIRES DATABASE VERIFICATION` |
+
+Every rules file carries an **External References — Availability** section listing each
+referenced entity and which of the above applies to it. The agent must consult that
+section before classifying a referential finding.
+
+The agent must never report a missing reference as an error when the referenced data was
+never available to check against.
+
+**This check also applies when authoring new rules files.** Any rules file added to a
+product folder must include an External References — Availability section whenever the
+source specification refers to another table, and must state explicitly where that table
+is not supported in this repository.
+
+Currently unsupported reference targets include:
+
+| Product | Referenced By | Not Held In Repo |
+| ------- | ------------- | ---------------- |
+| Angus | `Area`, `Tenant`, `Contact` | Property, Building |
+| PMX | `BMAP` | `CTYP`, `BANK` |
+| PMX | `ENTITY` | `PROJ` |
+
+---
+
+# Repository Layout — Rules and Schema
+
+Each product folder contains two sub-folders:
+
+```text
+/{Product}/Schema/{Table}.json   Structural definition of the database table
+/{Product}/Rules/{Table}.md      Business / intake rules for the table
+```
+
+The **Schema** file describes what the database will physically accept. The **Rules**
+file describes how the client is required to populate the intake file, and is derived
+from the product's data collection or import specification workbook.
+
+The agent should read **both** when validating a file. Where the two disagree on data
+type or length, the JSON schema is the source of truth for the physical database and the
+rules file defines the business expectation — report the stricter of the two.
+
 ---
 
 # Example End-to-End Scenario

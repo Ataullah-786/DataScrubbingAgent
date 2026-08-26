@@ -93,6 +93,28 @@ or be blank. Any other value is an **Error**.
 * `Floor Name` values on this sheet are the authoritative list referenced by the
   `Tenant` and `Contact` sheets.
 
+### External References — Availability
+
+Not every entity referenced by this worksheet is held in this repository. Before
+reporting a referential issue, check whether the reference can actually be validated.
+Never state that a reference is valid or invalid when the referenced data is not
+available.
+
+| Referenced | Used By | Held In This Repo? | How To Validate |
+| ---------- | ------- | ------------------ | --------------- |
+| Property (MRI Angus) | `Property Name` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+| Building (MRI Angus) | `Building Name` | **No** | Cannot be validated from this repository. Report as **Warning / REQUIRES DATABASE VERIFICATION** — do not report as an error. |
+
+> **Note:** Property and Building are referenced by this worksheet but are **not**
+> supported tables in this repository — there are no schema or rules files for them.
+> Any check against them requires access to the target database and must be reported
+> as `REQUIRES DATABASE VERIFICATION`.
+
+Values that **can** be validated in this repository are the internal consistency rules
+above (required values, lengths, allowed values, flag combinations and uniqueness),
+plus the `Floor Name` / `Suite Name` values consumed by `/Angus/Rules/Tenant.md` and
+`/Angus/Rules/Contact.md`.
+
 ---
 
 ## Sample Data (from the collection sheet)
