@@ -9,6 +9,9 @@ database table.
 This file instructs the agent **what to do and which files to read**. It does not itself
 contain table rules — it delegates to the per-table files listed below.
 
+> Configuring the agent for the first time? See `AGENT_SETUP.md` for the paste-ready
+> Copilot Studio instructions block that points the agent at this file.
+
 ---
 
 ## Core Rules
