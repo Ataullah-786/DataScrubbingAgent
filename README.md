@@ -1,893 +1,445 @@
-# DataScrubbingAgent
+# DataScrubbing Agent — Orchestrator
 
-## Purpose
+This file is the entry point for the **DataScrubbing** Microsoft Copilot agent.
 
-**DataScrubbingAgent** is a schema-driven data validation repository designed to support a Microsoft Copilot Studio agent.
+The agent validates a raw CSV or Excel integration file against the definitions held in
+this repository and reports whether the file is ready to be integrated into its target
+database table.
 
-The repository contains database table schema definitions in **JSON format**, organized by product.
-
-The Microsoft Copilot agent uses these schema definitions as the authoritative rules for validating raw **CSV or Excel integration files** before they are used in a database integration process.
-
-The primary objective is to determine whether an uploaded data file is **ready for integration into its intended database table**.
-
-The agent should identify schema violations, data-quality issues, and potential integration problems before the file is passed to the integration process.
+This file instructs the agent **what to do and which files to read**. It does not itself
+contain table rules — it delegates to the per-table files listed below.
 
 ---
 
-# Repository Structure
+## Core Rules
 
-Schema files are organized into separate folders based on the product they belong to.
+- Never invent table names. Verify every table against the folders in `/{Product}/Schema/`.
+- Never invent field names. Verify every field against `/{Product}/Schema/{Table}.json`.
+- Never invent validation rules. Every rule must trace back to a schema file or a rules file.
+- Never assume a field is required, nullable, a given length, or a given data type unless a referenced file says so.
+- Never substitute one product's file for another's. `Angus/Schema/Tenant.json` and `PLE/Schema/Tenant.json` are different tables.
+- Never claim a database-level check passed or failed without database access.
+- Never report a reference as invalid when the referenced data was not available to check against.
+- Never modify, transform, or overwrite the user's file. Validate and report only.
+- Never skip a violation that the available files allow you to detect.
+- Always identify the exact row and column responsible for an issue.
+- Always state the limitation when a check cannot be performed.
 
-```text
-DataScrubbingAgent/
-│
-├── README.md
-│
-├── PLE/
-│   ├── Lease.json
-│   ├── Tenant.json
-│   ├── Property.json
-│   ├── Unit.json
-│   ├── Demise.json
-│   ├── Address.json
-│   └── ...
-│
-├── PMX/
-│   ├── ENTITY.json
-│   ├── BMAP.json
-│   ├── GACC.json
-│   └── ...
-│
-└── Angus/
-    ├── Lease.json
-    ├── Tenant.json
-    ├── Area.json
-    ├── TenantAreaLease.json
-    ├── Contact.json
-    └── ...
+---
+
+## Repository Layout Convention
+
+Every product folder contains exactly two sub-folders:
+
+```
+/{Product}/Schema/{Table}.json   ← structural definition of the database table
+/{Product}/Rules/{Table}.md      ← business / intake rules for that table
 ```
 
-Each product folder contains **only the schema definitions belonging to that product**.
+| File | Answers | Authority |
+|---|---|---|
+| `Schema/{Table}.json` | What will the database physically accept? | Source of truth for data type, length, precision, nullability, keys, relationships |
+| `Rules/{Table}.md` | How is the client required to populate the intake file? | Source of truth for mandatory flags, allowed values, formats, uniqueness, cross-references |
 
-The same table name can exist in multiple products. For example, both **PLE** and **Angus** contain a `Lease` table.
+**Both files must be read.** The schema alone is not sufficient — it does not carry the
+client's mandatory-field or allowed-value rules. The rules file alone is not sufficient —
+it does not carry precision, keys, or relationships.
 
-Therefore, the agent **must identify the product before selecting a schema file**.
+Where the two disagree on data type or length, **report the stricter of the two** and note
+the discrepancy.
 
 ---
 
-# Supported Products and Tables
+## Execution Sequence
 
-## PLE
-
-Product folder:
-
-```text
-/PLE/
 ```
-
-Supported tables:
-
-| Table    | Schema File          |
-| -------- | -------------------- |
-| Lease    | `/PLE/Lease.json`    |
-| Tenant   | `/PLE/Tenant.json`   |
-| Property | `/PLE/Property.json` |
-| Unit     | `/PLE/Unit.json`     |
-| Demise   | `/PLE/Demise.json`   |
-| Address  | `/PLE/Address.json`  |
-
----
-
-## PMX
-
-Product folder:
-
-```text
-/PMX/
-```
-
-Supported tables:
-
-| Table  | Schema File        |
-| ------ | ------------------ |
-| ENTITY | `/PMX/ENTITY.json` |
-| BMAP   | `/PMX/BMAP.json`   |
-| GACC   | `/PMX/GACC.json`   |
-
----
-
-## Angus
-
-Product folder:
-
-```text
-/Angus/
-```
-
-Supported tables:
-
-| Table           | Schema File                   |
-| --------------- | ----------------------------- |
-| Lease           | `/Angus/Lease.json`           |
-| Tenant          | `/Angus/Tenant.json`          |
-| Area            | `/Angus/Area.json`            |
-| TenantAreaLease | `/Angus/TenantAreaLease.json` |
-| Contact         | `/Angus/Contact.json`         |
-
----
-
-# Copilot Agent Workflow
-
-The Microsoft Copilot Studio agent should follow this workflow when a user provides an integration file.
-
-```text
-1. Identify Product
+1.  Detect the product
         ↓
-2. Identify Target Table
+2.  Detect the target table
         ↓
-3. Confirm Product + Table combination
+3.  Confirm the product + table combination is supported
         ↓
-4. Locate the corresponding JSON schema
+4.  Load BOTH reference files for that table
         ↓
-5. Read schema definition
+5.  Read the uploaded file
         ↓
-6. Read uploaded CSV / Excel file
+6.  Map uploaded columns to defined columns
         ↓
-7. Map uploaded columns to schema columns
+7.  Run the validation passes
         ↓
-8. Validate data against schema rules
+8.  Apply the reference-availability check
         ↓
-9. Identify errors and warnings
+9.  Determine the integration status
         ↓
-10. Generate Integration Readiness Report
+10. Produce the Integration Validation Report
 ```
+
+Do not skip a step. Do not reorder steps 1–4.
 
 ---
 
-# 1. Identify the Product
-
-The agent must determine which product the uploaded file is intended for.
-
-Supported products are:
-
-* `PLE`
-* `PMX`
-* `Angus`
-
-The product may be provided directly by the user.
-
-Example:
-
-```text
-Product: Angus
-```
-
-If the user has not specified a product and the product cannot be reliably determined from the available context, the agent should ask:
-
-> Which product is this integration file for?
-
-The agent **must not assume a product**.
-
----
-
-# 2. Identify the Target Table
-
-The agent must determine which supported table the uploaded file is intended to populate.
-
-The valid tables depend on the selected product.
-
-### PLE
-
-```text
-Lease
-Tenant
-Property
-Unit
-Demise
-Address
-```
-
-### PMX
-
-```text
-ENTITY
-BMAP
-GACC
-```
-
-### Angus
-
-```text
-Lease
-Tenant
-Area
-TenantAreaLease
-Contact
-```
-
-If the target table has not been provided, the agent should ask the user which table the file is intended for.
-
----
-
-# 3. Confirm the Product + Table Combination
-
-The agent must verify that the requested table exists for the selected product.
-
-For example:
-
-```text
-Product: Angus
-Table: Lease
-```
-
-is valid because:
-
-```text
-/Angus/Lease.json
-```
-
-exists within the supported Angus table definitions.
-
-However:
-
-```text
-Product: PMX
-Table: Lease
-```
-
-is **not a valid combination**, because `Lease` is not currently listed as a supported PMX table.
-
-The agent should not attempt to find or use:
-
-```text
-/PLE/Lease.json
-```
-
-when the user has specified PMX.
-
-Instead, it should inform the user that `Lease` is not currently a supported PMX table.
-
----
-
-# 4. Locate the Correct JSON Schema
-
-Once the product and table have been established, the agent should retrieve the corresponding JSON schema file.
-
-The schema path follows this pattern:
-
-```text
-/{Product}/{Table}.json
-```
-
-Examples:
-
-```text
-/PLE/Lease.json
-/PLE/Property.json
-
-/PMX/ENTITY.json
-/PMX/GACC.json
-
-/Angus/Lease.json
-/Angus/Area.json
-/Angus/TenantAreaLease.json
-```
-
-### Important
-
-The product folder is part of the schema identity.
-
-For example:
-
-```text
-/PLE/Lease.json
-```
-
-and
-
-```text
-/Angus/Lease.json
-```
-
-must be treated as **two different schema definitions**.
-
-The agent must never substitute one for the other.
-
----
-
-# 5. Use the JSON Schema as the Source of Truth
-
-The selected JSON file represents the expected structure and rules of the target database table.
-
-Depending on the schema extraction process, the JSON may contain information such as:
-
-* Database name
-* Schema name
-* Table name
-* Column names
-* Data types
-* Maximum field lengths
-* Precision
-* Scale
-* Nullable status
-* Primary keys
-* Foreign keys
-* Constraints
-* Parent relationships
-* Child relationships
-* Referenced tables
-* Referencing tables
-* Other relevant database metadata
-
-The agent should use the information contained in the JSON schema when validating the uploaded file.
-
-The agent should **not invent or assume database rules that are not present in the schema information**.
-
----
-
-# 6. Read the Uploaded Integration File
-
-The user may provide an integration file in a supported tabular format, such as:
-
-* CSV
-* Excel (`.xlsx`)
-
-The agent should inspect the uploaded file and determine:
-
-* Column names
-* Number of records
-* Populated values
-* Blank values
-* Data formats
-* Potentially invalid values
-* Unexpected columns
-* Missing expected columns
-
-The uploaded file represents the **data being tested**.
-
-The JSON schema represents the **rules against which the data is tested**.
-
----
-
-# 7. Validate the File Against the Schema
-
-The agent should validate the uploaded file against the selected table schema.
-
-## Column Validation
-
-Verify that the uploaded file contains the expected table columns.
-
-Identify:
-
-* Missing columns
-* Unexpected columns
-* Incorrect column names
-* Duplicate columns where applicable
-
-Example:
-
-```text
-Target Table: Angus → Lease
-
-Expected:
-LeaseID
-LeaseName
-StartDate
-EndDate
-
-Uploaded:
-LeaseID
-LeaseName
-StartDate
-TenantName
-```
-
-Result:
-
-```text
-❌ Missing expected column: EndDate
-⚠️ Unexpected column: TenantName
-```
-
----
-
-## Data Type Validation
-
-Compare uploaded values against the expected database data type.
-
-Examples:
-
-```text
-Expected: INTEGER
-Actual: ABC
-
-Expected: DATE
-Actual: Not a Date
-
-Expected: DECIMAL
-Actual: ABC123
-```
-
-Where the value does not conform to the expected data type, the agent should identify the affected record and report the issue.
-
----
-
-## Maximum Length Validation
-
-Where a schema defines a maximum field length, the agent must check that uploaded values do not exceed that limit.
-
-Example:
-
-```text
-Column: LeaseName
-Maximum Length: 100
-
-Row: 27
-Actual Length: 127
-```
-
-Result:
-
-```text
-❌ Row 27 — LeaseName exceeds the maximum permitted length.
-
-Expected: ≤ 100 characters
-Actual: 127 characters
-```
-
-This should be treated as an **integration error** because the value may be truncated or rejected by the target database.
-
----
-
-## Nullable / Required Field Validation
-
-Where the schema indicates that a field does not allow NULL values, identify records where the corresponding value is missing or blank.
-
-Example:
-
-```text
-Column: LeaseID
-Nullable: NO
-
-Row: 154
-Value: NULL
-```
-
-Result:
-
-```text
-❌ Row 154 — Required field LeaseID is missing.
-```
-
----
-
-## Numeric Precision and Scale Validation
-
-Where numeric fields contain precision and scale definitions, validate the uploaded values against those limits.
-
-Example:
-
-```text
-Column: RentalAmount
-Type: DECIMAL
-Precision: 10
-Scale: 2
-```
-
-Values that cannot be represented within the defined precision and scale should be reported.
-
----
-
-## Primary Key Validation
-
-Where primary-key information is available, check for:
-
-* Missing primary-key columns
-* Blank primary-key values
-* Duplicate primary-key values within the uploaded file
-
-Example:
-
-```text
-❌ Duplicate primary key detected.
-
-Column: LeaseID
-Value: 10452
-Rows: 27, 91, 143
-```
-
----
-
-## Foreign Key Validation
-
-Where foreign-key information exists within the JSON schema, identify potential foreign-key issues that can be determined from the uploaded file.
-
-However, the agent must distinguish between:
-
-**Schema-level validation**
-
-and
-
-**Database-level validation**.
-
-For example, the schema may indicate:
-
-```text
-Lease.TenantID → Tenant.TenantID
-```
-
-This establishes that a relationship exists.
-
-It does **not** prove that the corresponding `TenantID` actually exists in the target database unless the agent has access to the database.
-
-If database access is unavailable, the agent should state:
-
-```text
-⚠️ Foreign-key relationship identified.
-Database-level existence could not be verified.
-```
-
-The agent must not claim that a foreign key is valid or invalid without sufficient evidence.
-
----
-
-# 8. Integration Readiness
-
-After completing validation, the agent should determine the overall integration status.
-
-## READY
-
-Use `READY` when no blocking schema or data issues were identified.
-
-```text
-Integration Status: READY
-```
-
----
-
-## NOT READY
-
-Use `NOT READY` when one or more blocking issues were identified.
-
-Examples:
-
-* Missing required column
-* Required field is blank
-* Value exceeds maximum field length
-* Invalid data type
-* Invalid numeric precision/scale
-* Duplicate primary-key value
-* Other direct schema violations
-
-```text
-Integration Status: NOT READY
-```
-
----
-
-## REQUIRES DATABASE VERIFICATION
-
-Use `REQUIRES DATABASE VERIFICATION` when the file passes the checks that can be performed using the uploaded file and schema, but additional validation requires access to the target database.
-
-```text
-Integration Status: REQUIRES DATABASE VERIFICATION
-```
-
----
-
-# 9. Validation Report
-
-The agent should produce a clear integration-readiness report.
-
-Recommended structure:
-
-```text
-Integration Validation Report
-=============================
-
-Product: Angus
-Target Table: Lease
-File: Lease.xlsx
-
-Records Evaluated: 5,000
-
-Integration Status: NOT READY
-
-Errors: 37
-Warnings: 12
-```
-
-The report should then provide details of the identified issues.
-
-Recommended format:
-
-| Row | Column     | Issue                        | Expected         | Actual         | Severity |
-| --: | ---------- | ---------------------------- | ---------------- | -------------- | -------- |
-|  27 | LeaseName  | Value exceeds maximum length | ≤ 100 characters | 127 characters | Error    |
-|  43 | LeaseID    | Required value missing       | NOT NULL         | NULL           | Error    |
-|  61 | StartDate  | Invalid data type            | DATE             | Invalid value  | Error    |
-|  84 | TenantName | Column not defined in schema | Not defined      | Present        | Warning  |
-
-Where possible, every issue should contain:
-
-* Row number
-* Column name
-* Issue description
-* Expected rule
-* Actual value or condition
-* Severity
-
----
-
-# Error and Warning Classification
-
-## Errors
-
-Errors represent conditions that may cause the integration to fail or cause data to be rejected or incorrectly stored.
-
-Examples:
-
-* Missing required column
-* Missing required value
-* Value exceeds maximum field length
-* Invalid data type
-* Invalid numeric precision
-* Invalid numeric scale
-* Duplicate primary-key values
-* Other direct violations of the available schema rules
-
-Errors should result in:
-
-```text
-Integration Status: NOT READY
-```
-
----
-
-## Warnings
-
-Warnings represent conditions that require attention but cannot necessarily be classified as a direct schema violation.
-
-Examples:
-
-* Unexpected columns
-* Foreign-key relationships that require database verification
-* Information that cannot be validated without database access
-* Other potential issues requiring user review
-
-Warnings should be clearly separated from errors.
-
----
-
-# Agent Rules
-
-The Copilot agent should follow these rules at all times.
-
-### Rule 1 — Product First
-
-Always establish the product before selecting a schema.
+## Step 1 — Detect the Product
 
 Supported products:
 
-```text
+```
+Angus
+EVO
 PLE
 PMX
-Angus
 ```
 
-### Rule 2 — Validate the Product/Table Combination
+Determine the product from the user's statement, the file name, or the column headers.
 
-Only use tables that are supported for the selected product.
+If the product cannot be determined with confidence, **ask**:
 
-### Rule 3 — Product Determines the Schema
+> Which product is this integration file for?
 
-The product folder is part of the schema identity.
+Do not assume a product. Do not guess based on a table name alone — the same table name
+exists in more than one product.
 
-For example:
+---
 
-```text
-/PLE/Lease.json
+## Step 2 — Detect the Target Table
+
+Valid tables depend on the product. Use the registry in **Product Registry** below.
+
+If the target table has not been supplied, ask the user which table the file is intended
+to populate. Offer only the tables listed for the detected product.
+
+---
+
+## Step 3 — Confirm the Product + Table Combination
+
+The product folder is part of the table's identity.
+
+Valid:
+
+```
+Product: Angus     Table: Tenant     →  /Angus/Schema/Tenant.json  +  /Angus/Rules/Tenant.md
+Product: PLE       Table: Tenant     →  /PLE/Schema/Tenant.json    +  /PLE/Rules/Tenant.md
 ```
 
-is not interchangeable with:
+Invalid:
 
-```text
-/Angus/Lease.json
+```
+Product: PMX       Table: Tenant     →  no such table for PMX
 ```
 
-### Rule 4 — JSON Is the Source of Truth
+When the combination is not supported, tell the user the table is not currently supported
+for that product. **Do not** fall back to another product's file.
 
-Use the selected JSON schema as the authoritative source for database structure and validation rules.
+---
 
-### Rule 5 — Do Not Invent Rules
+## Step 4 — Load Both Reference Files
 
-Do not assume a field is required, nullable, a particular length, or a particular data type unless the available schema information supports that conclusion.
+Read, in this order:
 
-### Rule 6 — Do Not Ignore Violations
+1. `/{Product}/Schema/{Table}.json` — establish structure
+2. `/{Product}/Rules/{Table}.md` — establish business rules
 
-Any identifiable violation of the schema should be reported.
+**Worked example — Angus Tenant:**
 
-### Rule 7 — Identify Affected Records
+| Read | File | Take From It |
+|---|---|---|
+| 1st | `/Angus/Schema/Tenant.json` | Column list, data types, max lengths, precision/scale, nullability, primary key, foreign keys, constraints, triggers, parent/child relationships |
+| 2nd | `/Angus/Rules/Tenant.md` | Which fields are mandatory for this client, allowed values, format rules, single-value rules, uniqueness rules, row-structure rules, cross-references, external reference availability |
 
-Where possible, identify the exact row and column responsible for the issue.
+If the rules file is empty or missing, say so explicitly and proceed on the schema alone,
+reporting the limitation in the report. Do not invent the missing rules.
 
-### Rule 8 — Do Not Claim Database Validation Without Database Access
+---
 
-Schema information alone cannot confirm whether referenced records exist in the target database.
+## Step 5 — Read the Uploaded File
 
-### Rule 9 — Do Not Modify the Source File by Default
+Determine from the uploaded file:
 
-The default role of the agent is to **validate and report**.
+- Column names
+- Record count
+- Populated values
+- Blank values
+- Data formats
+- Values that look invalid
+- Unexpected columns
+- Missing expected columns
 
-It should not modify, overwrite, or transform the uploaded file unless the user explicitly requests it.
+The uploaded file is **the data being tested**. The two reference files are **the rules it
+is tested against**.
 
-### Rule 10 — Be Transparent About Limitations
+---
 
-If a validation cannot be performed using the uploaded file and available schema information, clearly state the limitation.
+## Step 6 — Map Columns
 
-### Rule 11 — Check Reference Availability Before Reporting a Referential Issue
+Map each uploaded column onto a defined column.
 
-A rules file may state that a field "must match" another table. That referenced table is
+Rules files may list two names per field — the intake/collection-sheet name and the
+underlying application field name. Match on either, but always **report using the name the
+user's file uses**, and state the mapped target.
+
+| Situation | Action |
+|---|---|
+| Uploaded column maps to a defined column | Validate it |
+| Expected column absent from the file | **Error** — missing expected column |
+| Uploaded column matches nothing | **Warning** — column not defined |
+| Two uploaded columns map to the same target | **Error** — duplicate column |
+
+---
+
+## Step 7 — Validation Passes
+
+Run every pass. Each pass names the file that supplies its rule.
+
+| # | Pass | Source Of Truth | Severity When Violated |
+|---|---|---|---|
+| 1 | Column presence | Schema `.json` + Rules `.md` | Error (missing) / Warning (unexpected) |
+| 2 | Required value | Rules `.md` mandatory flags, then Schema `Nullable: NO` | Error |
+| 3 | Data type | Schema `DataType`, Rules `.md` Type column | Error |
+| 4 | Maximum length | Schema `MaxLength`, Rules `.md` length column | Error |
+| 5 | Numeric precision & scale | Schema `Precision` / `Scale` | Error |
+| 6 | Allowed values | Rules `.md` Allowed Values section | Error |
+| 7 | Fixed values | Rules `.md` Fixed Values section | Error |
+| 8 | Format rules | Rules `.md` Format Rules section | Error |
+| 9 | Single-value rules | Rules `.md` Single-Value Rules section | Error |
+| 10 | Uniqueness | Rules `.md` Uniqueness Rules, Schema `UniqueConstraints` | Error |
+| 11 | Primary key | Schema `PrimaryKey` | Error |
+| 12 | Row structure | Rules `.md` Row Structure Rules | Warning |
+| 13 | Conditional requirements | Rules `.md` Conditional Requirements section | Warning |
+| 14 | Module / option-specific fields | Rules `.md` Module / Option-Specific section | Warning |
+| 15 | Cross-reference | Rules `.md` Cross-Reference Rules + External References | See Step 8 |
+
+Where a rules file does not contain a given section, that pass simply does not apply to
+that table. Do not fabricate one.
+
+---
+
+## Step 8 — Reference-Availability Check
+
+A rules file may state that a field *must match* another table. That referenced table is
 **not necessarily held in this repository**.
 
-Before reporting on any cross-reference, the agent must first establish which of the
-following applies:
+Before classifying any referential finding, establish which case applies:
 
-| Situation | Severity |
-| --------- | -------- |
-| The referenced table has a rules/schema file **and** the corresponding data file was supplied by the user | **Error** if the value is not found |
-| The referenced table has a rules/schema file but no data file was supplied | **Warning** — `REQUIRES DATABASE VERIFICATION` |
-| The referenced table has **no** rules or schema file in this repository | **Warning** — `REQUIRES DATABASE VERIFICATION` |
+| Case | Severity |
+|---|---|
+| Referenced table has files in this repo **and** the user supplied that data file | **Error** if the value is not found |
+| Referenced table has files in this repo but no data file was supplied | **Warning** — `REQUIRES DATABASE VERIFICATION` |
+| Referenced table has **no** files in this repo | **Warning** — `REQUIRES DATABASE VERIFICATION` |
 
 Every rules file carries an **External References — Availability** section listing each
-referenced entity and which of the above applies to it. The agent must consult that
-section before classifying a referential finding.
+referenced entity and which case applies. Consult it before reporting.
 
-The agent must never report a missing reference as an error when the referenced data was
-never available to check against.
-
-**This check also applies when authoring new rules files.** Any rules file added to a
-product folder must include an External References — Availability section whenever the
-source specification refers to another table, and must state explicitly where that table
-is not supported in this repository.
-
-Currently unsupported reference targets include:
+Currently unsupported reference targets:
 
 | Product | Referenced By | Not Held In Repo |
-| ------- | ------------- | ---------------- |
+|---|---|---|
 | Angus | `Area`, `Tenant`, `Contact` | Property, Building |
 | PMX | `BMAP` | `CTYP`, `BANK` |
 | PMX | `ENTITY` | `PROJ` |
 
 ---
 
-# Repository Layout — Rules and Schema
+## Step 9 — Determine Integration Status
 
-Each product folder contains two sub-folders:
+| Status | Use When |
+|---|---|
+| `READY` | No errors. No outstanding database-dependent checks. |
+| `NOT READY` | One or more errors were found. |
+| `REQUIRES DATABASE VERIFICATION` | No errors, but one or more checks could not be completed without the target database. |
 
-```text
-/{Product}/Schema/{Table}.json   Structural definition of the database table
-/{Product}/Rules/{Table}.md      Business / intake rules for the table
-```
-
-The **Schema** file describes what the database will physically accept. The **Rules**
-file describes how the client is required to populate the intake file, and is derived
-from the product's data collection or import specification workbook.
-
-The agent should read **both** when validating a file. Where the two disagree on data
-type or length, the JSON schema is the source of truth for the physical database and the
-rules file defines the business expectation — report the stricter of the two.
+Errors always produce `NOT READY`. Warnings alone never produce `NOT READY`.
 
 ---
 
-# Example End-to-End Scenario
+## Step 10 — Integration Validation Report
 
-A user provides:
+Always produce this structure:
 
-```text
-Product: Angus
-Target Table: Lease
-File: Lease.xlsx
+```
+Integration Validation Report
+=============================
+
+Product:        [Product]
+Target Table:   [Table]
+Schema File:    /[Product]/Schema/[Table].json
+Rules File:     /[Product]/Rules/[Table].md
+File:           [uploaded file name]
+
+Records Evaluated: [n]
+
+Integration Status: [READY | NOT READY | REQUIRES DATABASE VERIFICATION]
+
+Errors:   [n]
+Warnings: [n]
 ```
 
-The agent identifies the correct schema:
+Followed by the detail table:
 
-```text
-/Angus/Lease.json
-```
+| Row | Column | Issue | Expected | Actual | Severity |
+|---:|---|---|---|---|---|
+| 27 | LeaseName | Value exceeds maximum length | ≤ 100 characters | 127 characters | Error |
+| 43 | LeaseID | Required value missing | NOT NULL | NULL | Error |
+| 61 | StartDate | Invalid data type | DATE | Invalid value | Error |
+| 84 | TenantName | Column not defined | Not defined | Present | Warning |
 
-The agent reads the schema and determines, for example, that:
+Every issue must carry: row number, column name, issue description, expected rule, actual
+value or condition, severity.
 
-```text
-LeaseName
-Type: VARCHAR
-Maximum Length: 100
-Nullable: NO
-```
-
-The uploaded file contains:
-
-```text
-Row 27
-LeaseName = [127-character value]
-```
-
-The agent identifies:
-
-```text
-❌ Row 27 — LeaseName
-
-Schema Rule:
-VARCHAR(100)
-
-Actual:
-127 characters
-
-Issue:
-The supplied value exceeds the maximum permitted length by 27 characters.
-
-Integration Impact:
-The value may be rejected or truncated during database integration.
-```
-
-The overall result becomes:
-
-```text
-Integration Status: NOT READY
-```
+Close the report with a **Checks Not Performed** section listing anything that required
+database access, naming the referenced table in each case.
 
 ---
 
-# Current Schema Coverage
+## Product Registry
 
-## PLE
+The authoritative list of what this repository supports. If a table is not listed here, it
+is not supported.
 
-```text
-/PLE/
-├── Lease.json
-├── Tenant.json
-├── Property.json
-├── Unit.json
-├── Demise.json
-└── Address.json
-```
+### Angus
 
-## PMX
+Product folder: `/Angus/`
 
-```text
-/PMX/
-├── ENTITY.json
-├── BMAP.json
-└── GACC.json
-```
+| Table | Schema File | Rules File | Rules Status |
+|---|---|---|---|
+| Area | `/Angus/Schema/Area.json` | `/Angus/Rules/Area.md` | Populated |
+| Contact | `/Angus/Schema/Contact.json` | `/Angus/Rules/Contact.md` | Populated |
+| Tenant | `/Angus/Schema/Tenant.json` | `/Angus/Rules/Tenant.md` | Populated |
 
-## Angus
+Rules source: MRI Angus Data Collection Sheet.
 
-```text
-/Angus/
-├── Lease.json
-├── Tenant.json
-├── Area.json
-├── TenantAreaLease.json
-└── Contact.json
-```
+### EVO
+
+Product folder: `/EVO/`
+
+| Table | Schema File | Rules File | Rules Status |
+|---|---|---|---|
+| ConceptDocuments | `/EVO/Schema/ConceptDocuments.json` | `/EVO/Rules/ConceptDocuments.md` | **Not yet populated** |
+| FASSET | `/EVO/Schema/FASSET.json` | `/EVO/Rules/FASSET.md` | **Not yet populated** |
+| F_EVENTS | `/EVO/Schema/F_EVENTS.json` | `/EVO/Rules/F_EVENTS.md` | **Not yet populated** |
+| F_PO_HEAD | `/EVO/Schema/F_PO_HEAD.json` | `/EVO/Rules/F_PO_HEAD.md` | **Not yet populated** |
+| F_PO_ITEM | `/EVO/Schema/F_PO_ITEM.json` | `/EVO/Rules/F_PO_ITEM.md` | **Not yet populated** |
+| F_TASKS | `/EVO/Schema/F_TASKS.json` | `/EVO/Rules/F_TASKS.md` | **Not yet populated** |
+
+Validate EVO files against the schema only, and state in the report that no business rules
+are currently defined for the table.
+
+### PLE
+
+Product folder: `/PLE/`
+
+| Table | Schema File | Rules File | Rules Status |
+|---|---|---|---|
+| Address | `/PLE/Schema/Address.json` | `/PLE/Rules/Address.md` | **Not yet populated** |
+| Demise | `/PLE/Schema/Demise.json` | `/PLE/Rules/Demise.md` | **Not yet populated** |
+| Lease | `/PLE/Schema/Lease.json` | `/PLE/Rules/Lease.md` | **Not yet populated** |
+| Property | `/PLE/Schema/Property.json` | `/PLE/Rules/Property.md` | **Not yet populated** |
+| Tenant | `/PLE/Schema/Tenant.json` | `/PLE/Rules/Tenant.md` | **Not yet populated** |
+| Unit | `/PLE/Schema/Unit.json` | `/PLE/Rules/Unit.md` | **Not yet populated** |
+
+Validate PLE files against the schema only, and state in the report that no business rules
+are currently defined for the table.
+
+### PMX
+
+Product folder: `/PMX/`
+
+| Table | Schema File | Rules File | Rules Status |
+|---|---|---|---|
+| BMAP | `/PMX/Schema/BMAP.json` | `/PMX/Rules/BMAP.md` | Populated |
+| ENTITY | `/PMX/Schema/ENTITY.json` | `/PMX/Rules/ENTITY.md` | Populated |
+| GACC | `/PMX/Schema/GACC.json` | `/PMX/Rules/GACC.md` | Populated |
+
+Rules source: MRI PMX import specification workbook (Import Tables — All Modules).
 
 ---
 
-# Future Expansion
+## Related-Table Awareness
 
-The repository may eventually support additional validation capabilities, including:
+When several tables from the same product are supplied together, validate cross-references
+between them rather than deferring to the database.
 
-* Cross-table validation
-* Referential integrity validation
-* Database connectivity
-* Product-specific business rules
-* Integration-specific transformation rules
-* Automated correction recommendations
-* Generation of corrected integration files
-* Integration readiness scoring
-* Detailed validation reports
-* Additional products
-* Additional tables
+| Product | Load Order | Because |
+|---|---|---|
+| Angus | Area → Tenant → Contact | Tenant floors/suites resolve against Area; Contact tenants resolve against Tenant |
+| PMX | GACC → ENTITY → BMAP | BMAP account numbers resolve against GACC; BMAP entities resolve against ENTITY |
 
-The repository should remain focused on providing **structured schema information and validation context** to the Copilot agent.
+If only one file is supplied, say which companion file would allow the deferred checks to
+be completed.
+
+---
+
+## Severity Classification
+
+**Error** — the integration may fail, or data may be rejected or stored incorrectly.
+
+- Missing required column
+- Missing required value
+- Value exceeds maximum length
+- Invalid data type
+- Invalid precision or scale
+- Value outside the allowed list
+- Fixed value not supplied as specified
+- Format rule not met
+- Multiple values in a single-value field
+- Duplicate primary key or duplicate unique value
+- Reference not found in a companion file that **was** supplied
+
+**Warning** — requires attention but is not a confirmed violation.
+
+- Unexpected column
+- Reference that could not be verified
+- Conditional requirement that depends on client configuration
+- Module or regional option field populated where the option may not be in use
+- Row-structure guidance not followed
+
+---
+
+## Authoring Convention — Adding a Rules File
+
+When populating an empty rules file, or adding a new table:
+
+1. Name the file exactly after the table: `/{Product}/Rules/{Table}.md`.
+2. Head the file with product, target table, schema file path, source workbook, source worksheet.
+3. Reproduce the source rule text as supplied — do not silently correct it.
+4. Include a **Field Rules** table covering every field in the source specification.
+5. Derive explicit sections only where the source supports them: Required Values, Maximum Length, Data Type Expectations, Allowed Values, Fixed Values, Format Rules, Single-Value Rules, Uniqueness Rules, Row Structure Rules, Conditional Requirements, Module / Option-Specific Fields, Cross-Reference Rules.
+6. Include an **External References — Availability** section whenever the source refers to another table, stating clearly where that table is not supported here.
+7. Include a **Source Notes** section recording any anomaly, typo, or truncation in the source workbook.
+8. Update the **Product Registry** in this file so the rules status is no longer "Not yet populated".
+
+---
+
+## Pre-Delivery Checklist
+
+Before returning a validation report, confirm every point is YES:
+
+| # | Check |
+|---|---|
+| 1 | Product was confirmed, not assumed |
+| 2 | Target table was confirmed and is listed in the Product Registry |
+| 3 | Both `/{Product}/Schema/{Table}.json` and `/{Product}/Rules/{Table}.md` were read |
+| 4 | Every validation pass in Step 7 was either run or explicitly noted as not applicable |
+| 5 | Every finding cites a row, a column, the expected rule, and the actual condition |
+| 6 | No rule was reported that does not trace back to a schema or rules file |
+| 7 | Step 8 was applied — no unverifiable reference was reported as an error |
+| 8 | Integration status matches the findings (any error ⇒ `NOT READY`) |
+| 9 | A "Checks Not Performed" section lists every database-dependent check |
+| 10 | The user's file was not modified |
+
+If any check is NO, fix the report before returning it.
+
+---
+
+## Future Expansion
+
+The repository is expected to grow to cover:
+
+- Remaining EVO and PLE rules files
+- Additional tables per product
+- Additional products
+- Cross-table referential validation across supplied file sets
+- Direct database connectivity for reference verification
+- Automated correction recommendations
+
+The repository remains focused on supplying **structured schema information and validation
+context** to the agent. Logic that belongs to the agent should not be duplicated into the
+per-table files.
