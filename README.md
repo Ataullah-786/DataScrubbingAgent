@@ -133,20 +133,36 @@ for that product. **Do not** fall back to another product's file.
 
 ## Step 4 — Load Both Reference Files
 
+**This step is mandatory for every product and every table.** Both files must be opened
+before any validation begins.
+
 Read, in this order:
 
 1. `/{Product}/Schema/{Table}.json` — establish structure
 2. `/{Product}/Rules/{Table}.md` — establish business rules
 
-**Worked example — Angus Tenant:**
-
 | Read | File | Take From It |
 |---|---|---|
-| 1st | `/Angus/Schema/Tenant.json` | Column list, data types, max lengths, precision/scale, nullability, primary key, foreign keys, constraints, triggers, parent/child relationships |
-| 2nd | `/Angus/Rules/Tenant.md` | Which fields are mandatory for this client, allowed values, format rules, single-value rules, uniqueness rules, row-structure rules, cross-references, external reference availability |
+| 1st | `/{Product}/Schema/{Table}.json` | Column list, data types, max lengths, precision/scale, nullability, primary key, foreign keys, constraints, triggers, parent/child relationships |
+| 2nd | `/{Product}/Rules/{Table}.md` | Which fields are mandatory for this client, allowed values, fixed values, format rules, single-value rules, uniqueness rules, row-structure rules, conditional requirements, cross-references, external reference availability |
 
-If the rules file is empty or missing, say so explicitly and proceed on the schema alone,
-reporting the limitation in the report. Do not invent the missing rules.
+**Worked examples:**
+
+| Product | Table | Read First | Then Read |
+|---|---|---|---|
+| Angus | Tenant | `/Angus/Schema/Tenant.json` | `/Angus/Rules/Tenant.md` |
+| EVO | F_TASKS | `/EVO/Schema/F_TASKS.json` | `/EVO/Rules/F_TASKS.md` |
+| PLE | Lease | `/PLE/Schema/Lease.json` | `/PLE/Rules/Lease.md` |
+| PMX | ENTITY | `/PMX/Schema/ENTITY.json` | `/PMX/Rules/ENTITY.md` |
+
+The pattern is identical for every product. Substitute the detected product and table into
+`/{Product}/Schema/{Table}.json` and `/{Product}/Rules/{Table}.md`.
+
+Take each file's contents at face value. Do not carry assumptions from one table's rules
+into another, and do not carry assumptions from one product into another.
+
+If either file cannot be read, stop and tell the user which file is missing. Do not
+proceed on a partial reference set, and do not substitute a different table's file.
 
 ---
 
@@ -226,15 +242,22 @@ Before classifying any referential finding, establish which case applies:
 | Referenced table has **no** files in this repo | **Warning** — `REQUIRES DATABASE VERIFICATION` |
 
 Every rules file carries an **External References — Availability** section listing each
-referenced entity and which case applies. Consult it before reporting.
+referenced entity and which case applies. That section is authoritative for its table —
+consult it before reporting, for every product.
 
-Currently unsupported reference targets:
+A referenced table is only validatable here if it appears in the **Product Registry**
+below. Anything outside that registry requires database access.
+
+Known unsupported reference targets:
 
 | Product | Referenced By | Not Held In Repo |
 |---|---|---|
 | Angus | `Area`, `Tenant`, `Contact` | Property, Building |
 | PMX | `BMAP` | `CTYP`, `BANK` |
 | PMX | `ENTITY` | `PROJ` |
+
+This table is a convenience summary of references documented so far. Do not treat it as
+complete — always read the table's own External References section.
 
 ---
 
@@ -298,57 +321,50 @@ is not supported.
 
 Product folder: `/Angus/`
 
-| Table | Schema File | Rules File | Rules Status |
-|---|---|---|---|
-| Area | `/Angus/Schema/Area.json` | `/Angus/Rules/Area.md` | Populated |
-| Contact | `/Angus/Schema/Contact.json` | `/Angus/Rules/Contact.md` | Populated |
-| Tenant | `/Angus/Schema/Tenant.json` | `/Angus/Rules/Tenant.md` | Populated |
-
-Rules source: MRI Angus Data Collection Sheet.
+| Table | Schema File | Rules File |
+|---|---|---|
+| Area | `/Angus/Schema/Area.json` | `/Angus/Rules/Area.md` |
+| Contact | `/Angus/Schema/Contact.json` | `/Angus/Rules/Contact.md` |
+| Tenant | `/Angus/Schema/Tenant.json` | `/Angus/Rules/Tenant.md` |
 
 ### EVO
 
 Product folder: `/EVO/`
 
-| Table | Schema File | Rules File | Rules Status |
-|---|---|---|---|
-| ConceptDocuments | `/EVO/Schema/ConceptDocuments.json` | `/EVO/Rules/ConceptDocuments.md` | **Not yet populated** |
-| FASSET | `/EVO/Schema/FASSET.json` | `/EVO/Rules/FASSET.md` | **Not yet populated** |
-| F_EVENTS | `/EVO/Schema/F_EVENTS.json` | `/EVO/Rules/F_EVENTS.md` | **Not yet populated** |
-| F_PO_HEAD | `/EVO/Schema/F_PO_HEAD.json` | `/EVO/Rules/F_PO_HEAD.md` | **Not yet populated** |
-| F_PO_ITEM | `/EVO/Schema/F_PO_ITEM.json` | `/EVO/Rules/F_PO_ITEM.md` | **Not yet populated** |
-| F_TASKS | `/EVO/Schema/F_TASKS.json` | `/EVO/Rules/F_TASKS.md` | **Not yet populated** |
-
-Validate EVO files against the schema only, and state in the report that no business rules
-are currently defined for the table.
+| Table | Schema File | Rules File |
+|---|---|---|
+| ConceptDocuments | `/EVO/Schema/ConceptDocuments.json` | `/EVO/Rules/ConceptDocuments.md` |
+| FASSET | `/EVO/Schema/FASSET.json` | `/EVO/Rules/FASSET.md` |
+| F_EVENTS | `/EVO/Schema/F_EVENTS.json` | `/EVO/Rules/F_EVENTS.md` |
+| F_PO_HEAD | `/EVO/Schema/F_PO_HEAD.json` | `/EVO/Rules/F_PO_HEAD.md` |
+| F_PO_ITEM | `/EVO/Schema/F_PO_ITEM.json` | `/EVO/Rules/F_PO_ITEM.md` |
+| F_TASKS | `/EVO/Schema/F_TASKS.json` | `/EVO/Rules/F_TASKS.md` |
 
 ### PLE
 
 Product folder: `/PLE/`
 
-| Table | Schema File | Rules File | Rules Status |
-|---|---|---|---|
-| Address | `/PLE/Schema/Address.json` | `/PLE/Rules/Address.md` | **Not yet populated** |
-| Demise | `/PLE/Schema/Demise.json` | `/PLE/Rules/Demise.md` | **Not yet populated** |
-| Lease | `/PLE/Schema/Lease.json` | `/PLE/Rules/Lease.md` | **Not yet populated** |
-| Property | `/PLE/Schema/Property.json` | `/PLE/Rules/Property.md` | **Not yet populated** |
-| Tenant | `/PLE/Schema/Tenant.json` | `/PLE/Rules/Tenant.md` | **Not yet populated** |
-| Unit | `/PLE/Schema/Unit.json` | `/PLE/Rules/Unit.md` | **Not yet populated** |
-
-Validate PLE files against the schema only, and state in the report that no business rules
-are currently defined for the table.
+| Table | Schema File | Rules File |
+|---|---|---|
+| Address | `/PLE/Schema/Address.json` | `/PLE/Rules/Address.md` |
+| Demise | `/PLE/Schema/Demise.json` | `/PLE/Rules/Demise.md` |
+| Lease | `/PLE/Schema/Lease.json` | `/PLE/Rules/Lease.md` |
+| Property | `/PLE/Schema/Property.json` | `/PLE/Rules/Property.md` |
+| Tenant | `/PLE/Schema/Tenant.json` | `/PLE/Rules/Tenant.md` |
+| Unit | `/PLE/Schema/Unit.json` | `/PLE/Rules/Unit.md` |
 
 ### PMX
 
 Product folder: `/PMX/`
 
-| Table | Schema File | Rules File | Rules Status |
-|---|---|---|---|
-| BMAP | `/PMX/Schema/BMAP.json` | `/PMX/Rules/BMAP.md` | Populated |
-| ENTITY | `/PMX/Schema/ENTITY.json` | `/PMX/Rules/ENTITY.md` | Populated |
-| GACC | `/PMX/Schema/GACC.json` | `/PMX/Rules/GACC.md` | Populated |
+| Table | Schema File | Rules File |
+|---|---|---|
+| BMAP | `/PMX/Schema/BMAP.json` | `/PMX/Rules/BMAP.md` |
+| ENTITY | `/PMX/Schema/ENTITY.json` | `/PMX/Rules/ENTITY.md` |
+| GACC | `/PMX/Schema/GACC.json` | `/PMX/Rules/GACC.md` |
 
-Rules source: MRI PMX import specification workbook (Import Tables — All Modules).
+Each rules file records its own source workbook and worksheet in its header. Read that
+header rather than assuming where a table's rules came from.
 
 ---
 
@@ -357,10 +373,19 @@ Rules source: MRI PMX import specification workbook (Import Tables — All Modul
 When several tables from the same product are supplied together, validate cross-references
 between them rather than deferring to the database.
 
+Derive the load order from the **Cross-Reference Rules** and **External References —
+Availability** sections of each table's rules file: load referenced tables before the
+tables that reference them.
+
+Known load orders:
+
 | Product | Load Order | Because |
 |---|---|---|
 | Angus | Area → Tenant → Contact | Tenant floors/suites resolve against Area; Contact tenants resolve against Tenant |
 | PMX | GACC → ENTITY → BMAP | BMAP account numbers resolve against GACC; BMAP entities resolve against ENTITY |
+
+For any product or table not listed above, work the order out from the rules files rather
+than assuming there are no relationships.
 
 If only one file is supplied, say which companion file would allow the deferred checks to
 be completed.
@@ -404,7 +429,7 @@ When populating an empty rules file, or adding a new table:
 5. Derive explicit sections only where the source supports them: Required Values, Maximum Length, Data Type Expectations, Allowed Values, Fixed Values, Format Rules, Single-Value Rules, Uniqueness Rules, Row Structure Rules, Conditional Requirements, Module / Option-Specific Fields, Cross-Reference Rules.
 6. Include an **External References — Availability** section whenever the source refers to another table, stating clearly where that table is not supported here.
 7. Include a **Source Notes** section recording any anomaly, typo, or truncation in the source workbook.
-8. Update the **Product Registry** in this file so the rules status is no longer "Not yet populated".
+8. Add the table to the **Product Registry** in this file if it is not already listed.
 
 ---
 
@@ -433,7 +458,6 @@ If any check is NO, fix the report before returning it.
 
 The repository is expected to grow to cover:
 
-- Remaining EVO and PLE rules files
 - Additional tables per product
 - Additional products
 - Cross-table referential validation across supplied file sets
