@@ -256,6 +256,9 @@ Known unsupported reference targets:
 | Product | Referenced By | Not Held In Repo |
 |---|---|---|
 | Angus | `Area`, `Tenant`, `Contact` | Property, Building |
+| EVO | `FLOCATE` | Sites, Countries, Building Type, Time Zone |
+| EVO | `FAREALO` | Cost Codes, Areas, Location Type, Sites |
+| EVO | `Floors`, `BuildingFloors` | Floor Library, Sites |
 | PMX | `BMAP` | `CTYP`, `BANK` |
 | PMX | `ENTITY` | `PROJ` |
 
@@ -336,12 +339,25 @@ Product folder: `/EVO/`
 
 | Table | Schema File | Rules File |
 |---|---|---|
+| BuildingFloors | `/EVO/Schema/BuildingFloors.json` | `/EVO/Rules/BuildingFloors.md` |
 | ConceptDocuments | `/EVO/Schema/ConceptDocuments.json` | `/EVO/Rules/ConceptDocuments.md` |
+| FAREALO | `/EVO/Schema/FAREALO.json` | `/EVO/Rules/FAREALO.md` |
 | FASSET | `/EVO/Schema/FASSET.json` | `/EVO/Rules/FASSET.md` |
+| FLOCATE | `/EVO/Schema/FLOCATE.json` | `/EVO/Rules/FLOCATE.md` |
+| Floors | `/EVO/Schema/Floors.json` | `/EVO/Rules/Floors.md` |
 | F_EVENTS | `/EVO/Schema/F_EVENTS.json` | `/EVO/Rules/F_EVENTS.md` |
 | F_PO_HEAD | `/EVO/Schema/F_PO_HEAD.json` | `/EVO/Rules/F_PO_HEAD.md` |
 | F_PO_ITEM | `/EVO/Schema/F_PO_ITEM.json` | `/EVO/Rules/F_PO_ITEM.md` |
 | F_TASKS | `/EVO/Schema/F_TASKS.json` | `/EVO/Rules/F_TASKS.md` |
+
+EVO source worksheets map to tables as follows:
+
+| Source Worksheet | Target Table |
+|---|---|
+| `Floors` | `Floors` |
+| `BuildingFloors` | `BuildingFloors` |
+| `Buildings` | `FLOCATE` |
+| `Locations` | `FAREALO` |
 
 ### PLE
 
@@ -386,6 +402,7 @@ Known load orders:
 |---|---|---|
 | Angus | Area → Tenant → Contact | Tenant floors/suites resolve against Area; Contact tenants resolve against Tenant |
 | EVO | FASSET → F_TASKS | PPM `Asset Code` resolves against an existing asset record |
+| EVO | Floors → FLOCATE → BuildingFloors → FAREALO | BuildingFloors links a Floor to a Building; Location floors resolve against that link, and Location buildings resolve against FLOCATE |
 | PMX | GACC → ENTITY → BMAP | BMAP account numbers resolve against GACC; BMAP entities resolve against ENTITY |
 
 For any product or table not listed above, work the order out from the rules files rather
