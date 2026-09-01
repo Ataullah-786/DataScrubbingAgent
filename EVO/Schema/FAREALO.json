@@ -1,0 +1,1830 @@
+﻿{
+    "Table":  "FAREALO",
+    "Schema":  "dbo",
+    "Database":  "OpalFM",
+    "ObjectId":  1275203643,
+    "Description":  null,
+    "CreateDate":  "2019-02-07",
+    "ModifyDate":  "2026-06-29",
+    "TableTotalRowCount":  320,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "LO_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  true,
+                        "IdentitySeed":  1,
+                        "IdentityIncrement":  1,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "LO_DESCRIPTION",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "LO_FLOOR",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "LO_CCENTRE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  24,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "LO_BCODE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  64,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "LO_ROOM_NUMBER",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "LO_LOC_STATUS",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "LO_NET_SPACE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "LO_SERVICE_CHARGE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "LO_STOCK_LOCATION",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "LO_TIME_START",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "LO_TIME_END",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  13,
+                        "Column":  "LO_BK_LOCATION",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  14,
+                        "Column":  "LO_SEATING_STD",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  15,
+                        "Column":  "LO_SEATING_MAX",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  16,
+                        "Column":  "LO_POWER",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  17,
+                        "Column":  "LO_TEL",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  50,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  18,
+                        "Column":  "LO_CHARGE_RATE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  19,
+                        "Column":  "LO_FKEY_RAP_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  20,
+                        "Column":  "LO_EXAM",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  21,
+                        "Column":  "LO_SEATING_EXAM",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  22,
+                        "Column":  "LO_NETWORK",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  23,
+                        "Column":  "LO_TIME_SETUP",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  24,
+                        "Column":  "LO_TIME_CLOSE",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  25,
+                        "Column":  "LO_OBJECT_ID",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  26,
+                        "Column":  "LO_LAYER_ID",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  27,
+                        "Column":  "LO_CAT",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  28,
+                        "Column":  "LO_INV",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  29,
+                        "Column":  "LO_LIMIT",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  30,
+                        "Column":  "LO_FKEY_FC_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  31,
+                        "Column":  "LO_FKEY_DP_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  32,
+                        "Column":  "LO_FKEY_LOT_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  33,
+                        "Column":  "LO_FKEY_BG_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  34,
+                        "Column":  "FloorId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__FloorId__4DEA58AD",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  35,
+                        "Column":  "AllDayBooking",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__AllDayB__4EDE7CE6",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  36,
+                        "Column":  "UserDefinedField1",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__4FD2A11F",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  37,
+                        "Column":  "UserDefinedField2",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__50C6C558",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  38,
+                        "Column":  "UserDefinedField3",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__51BAE991",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  39,
+                        "Column":  "UserDefinedField4",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__52AF0DCA",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  40,
+                        "Column":  "UserDefinedField5",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__53A33203",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  41,
+                        "Column":  "UserDefinedField6",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__5497563C",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  42,
+                        "Column":  "UserDefinedField7",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__UserDef__558B7A75",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  43,
+                        "Column":  "LO_CONDITION",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  44,
+                        "Column":  "LO_NOTES",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  3000,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  45,
+                        "Column":  "SchedulingWeight",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  46,
+                        "Column":  "CalendarId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  47,
+                        "Column":  "AreaId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  48,
+                        "Column":  "AreaName",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  49,
+                        "Column":  "ConUnAvailLocId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  50,
+                        "Column":  "BuildingFloorId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  51,
+                        "Column":  "Latitude",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  52,
+                        "Column":  "Longitude",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  53,
+                        "Column":  "Elevation",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  54,
+                        "Column":  "GISReference",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  55,
+                        "Column":  "ExtSystem",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  56,
+                        "Column":  "ExtObject",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  57,
+                        "Column":  "ExtIdentifier",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  58,
+                        "Column":  "ExcitechID",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  59,
+                        "Column":  "LocationUrl",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  60,
+                        "Column":  "MobileLocation",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  61,
+                        "Column":  "GrossArea",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  62,
+                        "Column":  "ExternalController",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Externa__399A1294",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  63,
+                        "Column":  "AltExtIdentifier",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  64,
+                        "Column":  "LocationStatusId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  65,
+                        "Column":  "StockIssueRequiresApproval",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__StockIs__3A8E36CD",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  66,
+                        "Column":  "CeilingHeight",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  67,
+                        "Column":  "SpaceFunctionId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  68,
+                        "Column":  "ParentLocationId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  69,
+                        "Column":  "LocationScope",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Locatio__2BD60322",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  70,
+                        "Column":  "CreatedBy",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Created__2CCA275B",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  71,
+                        "Column":  "CreatedDate",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Created__2DBE4B94",
+                        "DefaultValue":  "(getutcdate())",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  72,
+                        "Column":  "ModifiedBy",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Modifie__2EB26FCD",
+                        "DefaultValue":  "((-1))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  73,
+                        "Column":  "ModifiedDate",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Modifie__2FA69406",
+                        "DefaultValue":  "(getutcdate())",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  74,
+                        "Column":  "Version",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Version__309AB83F",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  75,
+                        "Column":  "Deleted",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Deleted__318EDC78",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  76,
+                        "Column":  "AsbestosPresent",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FAREALO__Asbesto__12012286",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  77,
+                        "Column":  "SpaceIdentifier",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  256,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  78,
+                        "Column":  "HierarchyPath",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "LO_SEQ"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "IDX_EvoDescription",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_DESCRIPTION",
+                                           "LO_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_FAREALOTimesBuildingGroup",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_BK_LOCATION",
+                                           "LO_FKEY_BG_SEQ",
+                                           "LO_TIME_START",
+                                           "LO_TIME_END"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_BCODE",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_BCODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_BK_LOCATION",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_BK_LOCATION"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_CCENTRE",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_CCENTRE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_FKEY_BG_SEQ",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_FKEY_BG_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_FKEY_LOT_SEQ",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_FKEY_LOT_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_ROOM_NUMBER",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_ROOM_NUMBER"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_LO_STOCK_LOCATION",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_STOCK_LOCATION"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "PK__FAREALO__D0A091BFFC3822BD",
+                        "Type":  "CLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "LO_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  null,
+                                 "Column":  null,
+                                 "Definition":  null,
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  "FAREALOWT",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+
+                                ],
+    "ReferencedBy_ChildTables":  [
+
+                                 ]
+}

@@ -1,0 +1,3193 @@
+﻿{
+    "Table":  "FLOCATE",
+    "Schema":  "dbo",
+    "Database":  "OpalFM",
+    "ObjectId":  270676062,
+    "Description":  null,
+    "CreateDate":  "2019-02-07",
+    "ModifyDate":  "2026-06-29",
+    "TableTotalRowCount":  21,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "BG_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  true,
+                        "IdentitySeed":  1,
+                        "IdentityIncrement":  1,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "BG_CODE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  64,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "BG_SITE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "BG_ADDRESS",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  600,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "BG_POSTCODE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  30,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "BG_COUNTRY",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "BG_DISABLED_ACCESS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "BG_BRANCH",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "BG_FHOLDER",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "BG_LEASE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "BG_SITE_AREA",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "BG_TOTAL_NET_LETTABLE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  13,
+                        "Column":  "BG_NO_OF_FLOORS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  14,
+                        "Column":  "BG_NO_OF_FLOORS_OCCUP",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  15,
+                        "Column":  "BG_FUNCTION",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  16,
+                        "Column":  "BG_OPEN_FROM",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  17,
+                        "Column":  "BG_OPEN_TO",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  18,
+                        "Column":  "BG_SERVICE_TOPOLOGY",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  19,
+                        "Column":  "BG_SHAPE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  40,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  20,
+                        "Column":  "BG_NO_OF_FT_STAFF",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  21,
+                        "Column":  "BG_NO_OF_CTR_STAFF",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  22,
+                        "Column":  "BG_CHP_ONSITE",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  23,
+                        "Column":  "BG_NO_OF_ENTRANCES",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  24,
+                        "Column":  "BG_NO_OF_PSNGR_LIFTS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  25,
+                        "Column":  "BG_NO_OF_GOODS_LIFTS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  26,
+                        "Column":  "BG_NO_OF_ESCALATORS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  27,
+                        "Column":  "BG_TOTAL_PARKING_BAYS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  28,
+                        "Column":  "BG_NO_OF_DISBL_BAYS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  29,
+                        "Column":  "BG_NO_OF_VISIT_BAYS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  30,
+                        "Column":  "BG_NO_OF_STAFF_BAYS",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  31,
+                        "Column":  "BG_LOID",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  12,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  32,
+                        "Column":  "BG_FKEY_BGP_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  33,
+                        "Column":  "BG_YEAR_BUILT",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  8,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  34,
+                        "Column":  "BG_OS_REF",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  44,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  35,
+                        "Column":  "BG_EASTINGS",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  22,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  36,
+                        "Column":  "BG_NORTHINGS",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  22,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  37,
+                        "Column":  "BG_CLIENT",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  40,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  38,
+                        "Column":  "BG_OCCUPANCY_TYPE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  39,
+                        "Column":  "BG_NET_BOOK_VALUE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  40,
+                        "Column":  "BG_CONSTRUCTION_TYPE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  41,
+                        "Column":  "BG_HEATING_TYPE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  42,
+                        "Column":  "BG_LIFESPAN",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  43,
+                        "Column":  "BG_CURRENT_AGE",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  44,
+                        "Column":  "BG__LEASE_START",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  45,
+                        "Column":  "BG__LEASE_FINISH",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  46,
+                        "Column":  "BG__LEASE_TYPE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  80,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  47,
+                        "Column":  "BG__LEASE_TERMS",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  80,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  48,
+                        "Column":  "BG_LISTED",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  49,
+                        "Column":  "BG_PHOTO_BLOB",
+                        "DataType":  "image",
+                        "MaxLength":  16,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  50,
+                        "Column":  "BG_PHOTO_URL",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  400,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  51,
+                        "Column":  "BG_LOCAL_AUTHORITY",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  80,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  52,
+                        "Column":  "BG_FIRE_AUTHORITY",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  80,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  53,
+                        "Column":  "BG_POLICE_AUTHORITY",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  80,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  54,
+                        "Column":  "BG__INSURER",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  80,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  55,
+                        "Column":  "BG__GENERAL",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  2000,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  56,
+                        "Column":  "BG_WATER_AUTHORITY",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  40,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  57,
+                        "Column":  "BG_DISPOSAL_DATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  58,
+                        "Column":  "BG_DISPOSAL_DETAILS",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  400,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  59,
+                        "Column":  "BG_GROSS_EXT_AREA",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  60,
+                        "Column":  "BG_GROSS_INT_AREA",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  61,
+                        "Column":  "BG_NET_INT_AREA",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  62,
+                        "Column":  "BG_CORE_AREA",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  63,
+                        "Column":  "BG_BUILDING_TYPE",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  64,
+                        "Column":  "BG_DEFAULT_SERV_CHAR",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  65,
+                        "Column":  "BG_USER_DEF1",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  66,
+                        "Column":  "BG_USER_DEF2",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  67,
+                        "Column":  "BG_USER_DEF3",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  68,
+                        "Column":  "BG_USER_DEF4",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  69,
+                        "Column":  "BG_USER_DEF5",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  70,
+                        "Column":  "BG_PURC_PRICE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  71,
+                        "Column":  "BG_PURC_DATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  72,
+                        "Column":  "BG_PROP_VALUE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  73,
+                        "Column":  "BG_P_VALUE_DATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  74,
+                        "Column":  "BG_INS_VALUE",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  75,
+                        "Column":  "BG_I_VALUE_DATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  76,
+                        "Column":  "BG_FIRE_NO",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  30,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  77,
+                        "Column":  "BG_FIRE_RENDATE",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  78,
+                        "Column":  "BG_OBJECT_ID",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  79,
+                        "Column":  "BG_LAYER_ID",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  60,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  80,
+                        "Column":  "Hash",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Hash__120A78D0",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  81,
+                        "Column":  "Status",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Status__12FE9D09",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  82,
+                        "Column":  "Deleted",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Deleted__13F2C142",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  83,
+                        "Column":  "CreatedBy",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Created__14E6E57B",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  84,
+                        "Column":  "CreatedDate",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Created__15DB09B4",
+                        "DefaultValue":  "(getutcdate())",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  85,
+                        "Column":  "ModifiedBy",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Modifie__16CF2DED",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  86,
+                        "Column":  "ModifiedDate",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Modifie__17C35226",
+                        "DefaultValue":  "(getutcdate())",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  87,
+                        "Column":  "BG_ADDRESS_1",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  88,
+                        "Column":  "BG_ADDRESS_2",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  89,
+                        "Column":  "BG_ADDRESS_3",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  90,
+                        "Column":  "BG_ADDRESS_4",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  128,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  91,
+                        "Column":  "BG_OPEN_MONDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__18B7765F",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  92,
+                        "Column":  "BG_OPEN_TUESDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__19AB9A98",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  93,
+                        "Column":  "BG_OPEN_WEDNESDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__1A9FBED1",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  94,
+                        "Column":  "BG_OPEN_THURSDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__1B93E30A",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  95,
+                        "Column":  "BG_OPEN_FRIDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__1C880743",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  96,
+                        "Column":  "BG_OPEN_SATURDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__1D7C2B7C",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  97,
+                        "Column":  "BG_OPEN_SUNDAY",
+                        "DataType":  "tinyint",
+                        "MaxLength":  1,
+                        "Precision":  3,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__BG_OPEN__1E704FB5",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  98,
+                        "Column":  "BranchId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  99,
+                        "Column":  "BG__LEASE_STARTUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  100,
+                        "Column":  "BG__LEASE_STARTTZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  101,
+                        "Column":  "BG__LEASE_FINISHUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  102,
+                        "Column":  "BG__LEASE_FINISHTZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  103,
+                        "Column":  "BG_DISPOSAL_DATEUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  104,
+                        "Column":  "BG_DISPOSAL_DATETZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  105,
+                        "Column":  "BG_PURC_DATEUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  106,
+                        "Column":  "BG_PURC_DATETZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  107,
+                        "Column":  "BG_P_VALUE_DATEUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  108,
+                        "Column":  "BG_P_VALUE_DATETZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  109,
+                        "Column":  "BG_I_VALUE_DATEUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  110,
+                        "Column":  "BG_I_VALUE_DATETZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  111,
+                        "Column":  "BG_FIRE_RENDATEUtc",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  112,
+                        "Column":  "BG_FIRE_RENDATETZ",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  113,
+                        "Column":  "CostCentreId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  114,
+                        "Column":  "TimeZoneId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  115,
+                        "Column":  "BG_CONDITION",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  116,
+                        "Column":  "CalendarId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  117,
+                        "Column":  "AddTime",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  118,
+                        "Column":  "LackOfNetworkCoverage",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  119,
+                        "Column":  "BuildingTypeId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  120,
+                        "Column":  "BuildingStatusId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  121,
+                        "Column":  "StateId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  122,
+                        "Column":  "CountryLibraryId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  123,
+                        "Column":  "Latitude",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  124,
+                        "Column":  "Longitude",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  125,
+                        "Column":  "Elevation",
+                        "DataType":  "float",
+                        "MaxLength":  8,
+                        "Precision":  53,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  126,
+                        "Column":  "GISReference",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  127,
+                        "Column":  "ExtSystem",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  128,
+                        "Column":  "ExtObject",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  129,
+                        "Column":  "ExtIdentifier",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  130,
+                        "Column":  "EnforceAssetClass",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Enforce__1F6473EE",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  131,
+                        "Column":  "BG_FKEY_CLNT_SEQ",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  132,
+                        "Column":  "DefaultContractId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  133,
+                        "Column":  "ExternalController",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Externa__38A5EE5B",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  134,
+                        "Column":  "ClientId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  135,
+                        "Column":  "AltExtIdentifier",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  200,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  136,
+                        "Column":  "COBieIFCProjectId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  137,
+                        "Column":  "ParentBuildingId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  138,
+                        "Column":  "BuildingScope",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__FLOCATE__Buildin__68CA02C9",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  139,
+                        "Column":  "HierarchyPath",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  2000,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  140,
+                        "Column":  "PropertyAccessProfileId",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  141,
+                        "Column":  "PropertyManagerId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  142,
+                        "Column":  "SurveyorId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  143,
+                        "Column":  "KeyAccountId1",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  144,
+                        "Column":  "KeyAccountId2",
+                        "DataType":  "bigint",
+                        "MaxLength":  8,
+                        "Precision":  19,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  145,
+                        "Column":  "ManagingAgent",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  510,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "YES",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "BG_SEQ"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "IDX_BG_CODE",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_CODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_BG_FKEY_BGP_SEQ",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_FKEY_BGP_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_BG_POSTCODE",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_POSTCODE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_BG_SITE",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_SITE"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_EvoBldgCode",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_CODE",
+                                           "BG_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "IDX_EvoBlgName",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_SITE",
+                                           "BG_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "PK__FLOCATE__D87C7979AAB8DDA1",
+                        "Type":  "CLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BG_SEQ"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  null,
+                                 "Column":  null,
+                                 "Definition":  null,
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  "FLOCATEWT",
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+
+                                ],
+    "ReferencedBy_ChildTables":  [
+
+                                 ]
+}

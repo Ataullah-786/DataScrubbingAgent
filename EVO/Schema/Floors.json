@@ -1,0 +1,328 @@
+﻿{
+    "Table":  "Floors",
+    "Schema":  "dbo",
+    "Database":  "OpalFM",
+    "ObjectId":  766677829,
+    "Description":  null,
+    "CreateDate":  "2019-02-07",
+    "ModifyDate":  "2019-02-07",
+    "TableTotalRowCount":  0,
+    "Columns":  [
+                    {
+                        "Order":  1,
+                        "Column":  "FloorId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  true,
+                        "IdentitySeed":  1,
+                        "IdentityIncrement":  1,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  null,
+                        "DefaultValue":  null,
+                        "Description":  null,
+                        "Keys":  [
+                                     "PK"
+                                 ]
+                    },
+                    {
+                        "Order":  2,
+                        "Column":  "BuildingId",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Building__2F9ADBB7",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  3,
+                        "Column":  "Name",
+                        "DataType":  "nvarchar",
+                        "MaxLength":  32,
+                        "Precision":  0,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  "Latin1_General_CI_AS",
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Name__308EFFF0",
+                        "DefaultValue":  "(\u0027No Name\u0027)",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  4,
+                        "Column":  "FloorOrder",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__FloorOrd__31832429",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  5,
+                        "Column":  "Version",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Version__32774862",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  6,
+                        "Column":  "Hash",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Hash__336B6C9B",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  7,
+                        "Column":  "Status",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Status__345F90D4",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  8,
+                        "Column":  "Deleted",
+                        "DataType":  "bit",
+                        "MaxLength":  1,
+                        "Precision":  1,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Deleted__3553B50D",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  9,
+                        "Column":  "CreatedBy",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__CreatedB__3647D946",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  10,
+                        "Column":  "CreatedDate",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__CreatedD__373BFD7F",
+                        "DefaultValue":  "(getutcdate())",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  11,
+                        "Column":  "ModifiedBy",
+                        "DataType":  "int",
+                        "MaxLength":  4,
+                        "Precision":  10,
+                        "Scale":  0,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Modified__383021B8",
+                        "DefaultValue":  "((0))",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    },
+                    {
+                        "Order":  12,
+                        "Column":  "ModifiedDate",
+                        "DataType":  "datetime",
+                        "MaxLength":  8,
+                        "Precision":  23,
+                        "Scale":  3,
+                        "Nullable":  "NO",
+                        "Collation":  null,
+                        "IsIdentity":  false,
+                        "IdentitySeed":  null,
+                        "IdentityIncrement":  null,
+                        "IsComputed":  false,
+                        "ComputedDefinition":  null,
+                        "DefaultConstraint":  "DF__Floors__Modified__392445F1",
+                        "DefaultValue":  "(getutcdate())",
+                        "Description":  null,
+                        "Keys":  [
+
+                                 ]
+                    }
+                ],
+    "PrimaryKey":  {
+                       "Constraint":  null,
+                       "Columns":  [
+                                       {
+                                           "Order":  1,
+                                           "Column":  "FloorId"
+                                       }
+                                   ]
+                   },
+    "UniqueConstraints":  [
+
+                          ],
+    "Indexes":  [
+                    {
+                        "Name":  "IDX_BuildingId",
+                        "Type":  "NONCLUSTERED",
+                        "IsUnique":  false,
+                        "IsPrimaryKey":  false,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "BuildingId"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    },
+                    {
+                        "Name":  "PK__Floors__49D1E84B4149B56E",
+                        "Type":  "CLUSTERED",
+                        "IsUnique":  true,
+                        "IsPrimaryKey":  true,
+                        "IsUniqueConstraint":  false,
+                        "FilterDefinition":  null,
+                        "KeyColumns":  [
+                                           "FloorId"
+                                       ],
+                        "IncludedColumns":  [
+
+                                            ]
+                    }
+                ],
+    "CheckConstraints":  [
+                             {
+                                 "Name":  null,
+                                 "Column":  null,
+                                 "Definition":  null,
+                                 "IsDisabled":  false,
+                                 "IsNotTrusted":  false
+                             }
+                         ],
+    "Triggers":  [
+                     {
+                         "Name":  null,
+                         "IsDisabled":  false,
+                         "IsInsteadOf":  false
+                     }
+                 ],
+    "References_ParentTables":  [
+
+                                ],
+    "ReferencedBy_ChildTables":  [
+
+                                 ]
+}
