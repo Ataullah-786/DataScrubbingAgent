@@ -251,6 +251,21 @@ Every rules file carries an **External References — Availability** section lis
 
 A referenced table is only validatable here if it appears in the **Product Registry** below. Anything outside that registry requires database access.
 
+Known unsupported reference targets:
+
+| Product | Referenced By                | Not Held In Repo                        |
+| ------- | ---------------------------- | --------------------------------------- |
+| Angus   | `Area`, `Tenant`, `Contact`  | Property, Building                      |
+| EVO     | `FLOCATE`                    | Sites, Countries, Building Type, Time Zone |
+| EVO     | `FAREALO`                    | Cost Codes, Areas, Location Type, Sites |
+| EVO     | `Floors`, `BuildingFloors`   | Floor Library, Sites                    |
+| PMX     | `BMAP`                       | `CTYP`, `BANK`                          |
+| PMX     | `ENTITY`                     | `PROJ`                                  |
+
+This table is a convenience summary of references documented so far. Do not treat it as complete — always read the table's own **External References — Availability** section.
+
+A `REQUIRES DATABASE VERIFICATION` finding is **never** auto-correctable. It must be carried into remediation as `Unresolved`.
+
 ---
 
 # Step 9 — Determine Initial Integration Status
@@ -347,6 +362,17 @@ Determine Final Status
 
 Remediation must only be performed when the required information is available to determine the correct action.
 
+## When Remediation Runs
+
+| Situation                                                    | Action                                                                       |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Initial status is `READY`                                    | No remediation. State that no changes were needed.                           |
+| Initial status is `NOT READY` or `REQUIRES DATABASE VERIFICATION` | Proceed to remediation automatically, unless the user asked for validation only. |
+| The user asked for "validate only" / "report only"           | Stop after Step 10. Offer remediation as a next step.                        |
+| No issue in the file is `AUTO-CORRECTABLE`                   | Still produce the Change Log, with every issue recorded as `Unresolved`, and state that no cleaned file could improve the status. |
+
+Never ask permission twice, and never remediate silently — always announce that a cleaned file and Change Log are being produced.
+
 ---
 
 ## Remediation Rules
@@ -386,33 +412,77 @@ If a correction cannot be safely determined, the issue remains unresolved and mu
 
 When remediation is performed, create a separate cleaned output file.
 
-The original file must remain unchanged.
+The original file must remain unchanged. The cleaned file is a **new artefact**, never an edit of the input.
 
-The cleaned output should:
+The cleaned output must:
 
 * Preserve the original file structure wherever possible
-* Preserve valid data
+* Preserve the original column order and header row
+* Preserve the original row order, so row numbers stay comparable with the validation report
+* Preserve valid data byte-for-byte — never reformat a value that was already valid
 * Apply only supported corrections
 * Remove or transform data only where explicitly justified
 * Maintain the expected column structure
 * Be suitable for the next validation pass
 
-The output should be clearly identified as the **remediated/cleaned file**.
+## Output Artefact Convention
+
+Three artefacts are produced. Name them deterministically from the original file name:
+
+| Artefact         | Name                                     | Format                              |
+| ---------------- | ---------------------------------------- | ----------------------------------- |
+| Cleaned file     | `{original-name}_CLEANED.{ext}`          | Same format as the input (CSV/XLSX) |
+| Change Log       | `{original-name}_CHANGELOG.csv`          | CSV, one row per change             |
+| Final report     | `{original-name}_VALIDATION_REPORT.md`   | Markdown                            |
+
+If the delivery channel cannot carry file attachments, render each artefact inline in full — the cleaned data as a complete delimited block, and the Change Log as a complete table. Never deliver a truncated or sampled cleaned file; never write "…and 40 more rows".
+
+Rows that could not be corrected are still carried into the cleaned file **with their original values intact**. The cleaned file must contain the same number of records as the input unless a rule explicitly requires a record to be removed, in which case each removal is logged individually.
 
 ---
 
 # Step 13 — Produce Change Log
 
-Every change made to the original data must be recorded.
+Every change made to the original data must be recorded. The Change Log is a **deliverable in its own right**, not a narrative summary.
 
-The Change Log should contain at least:
+Head it with:
+
+```text
+Change Log
+==========
+
+Product:        [Product]
+Target Table:   [Table]
+Original File:  [filename]
+Cleaned File:   [filename]_CLEANED.[ext]
+Generated:      [timestamp]
+
+Total Changes:  [n]
+  Corrected:    [n]
+  Transformed:  [n]
+  Removed:      [n]
+Unresolved:     [n]
+```
+
+Then one row per change — and one row per issue that was left unresolved:
 
 | Row | Column      | Original Value    | New Value         | Action      | Reason                         | Source             | Status     |
 | --: | ----------- | ----------------- | ----------------- | ----------- | ------------------------------ | ------------------ | ---------- |
 |  27 | LeaseName   | Original value    | Corrected value   | Corrected   | Exceeded maximum length        | Rules.md           | Applied    |
-|  43 | Status      | Invalid value     | Valid value       | Corrected   | Value not in allowed list      | Rules.md           | Applied    |
+|  43 | Status      | Invalid value     | Valid value       | Transformed | Value not in allowed list      | Rules.md           | Applied    |
 |  61 | LegacyField | Value             | —                 | Removed     | Field not permitted by rules   | Rules.md           | Applied    |
 |  84 | TenantID    | Invalid reference | Invalid reference | Not changed | Requires database verification | External Reference | Unresolved |
+
+Every row must carry all eight columns. No column may be left blank; use `—` for a value that does not exist.
+
+### Change Log Action Values
+
+Use exactly one of:
+
+* `Corrected` — the value was wrong and has been replaced with the authoritative correct value
+* `Transformed` — the value was right but in the wrong shape (format, case, type, padding) and has been reshaped
+* `Removed` — the value or record was deleted because the rules state it must not be present
+* `Not changed` — an issue was detected but no safe correction was available
 
 ### Change Log Status Values
 
@@ -422,7 +492,22 @@ Use:
 * `Unresolved` — issue could not be safely corrected
 * `Not Applicable` — remediation was not required
 
-The Change Log must never claim a correction was made when the data was not actually changed.
+### Reason and Source
+
+The **Reason** must state the rule that justified the change in plain language. The **Source** must name where that rule came from — `/{Product}/Schema/{Table}.json`, `/{Product}/Rules/{Table}.md`, a supplied companion file, or `External Reference`. A change with no traceable source must not be made.
+
+### Unresolved Records
+
+Close the Change Log with an explicit section listing every record that could **not** be corrected automatically, stating for each:
+
+* Row and column
+* What is wrong
+* Why it could not be corrected (`REQUIRES REVIEW`, `REQUIRES DATABASE VERIFICATION`, or `UNRESOLVED`)
+* What the user must supply or decide to resolve it
+
+This section is what the user acts on. It must never be omitted, even when it is empty — in that case state "No unresolved issues."
+
+The Change Log must never claim a correction was made when the data was not actually changed, and every change present in the cleaned file must appear in the Change Log. The two must reconcile exactly.
 
 ---
 
@@ -508,10 +593,12 @@ Issues Unresolved: [n]
 Final Status: [READY | NOT READY | REQUIRES DATABASE VERIFICATION]
 
 Outputs:
-- Validation Report
-- Cleaned/Remediated File
-- Change Log
+- Validation Report          [filename]_VALIDATION_REPORT.md
+- Cleaned/Remediated File    [filename]_CLEANED.[ext]
+- Change Log                 [filename]_CHANGELOG.csv
 ```
+
+All three outputs are mandatory whenever remediation runs. A response that reports issues without also delivering the cleaned file and Change Log is incomplete.
 
 The final response should clearly distinguish between:
 
@@ -588,6 +675,58 @@ Only `AUTO-CORRECTABLE` issues may be automatically changed by the agent.
 
 ---
 
+# Product Registry
+
+The authoritative list of what this repository supports. If a table is not listed here, it is not supported. If a rules file is listed as *empty*, validate only what the schema supports, label everything else unverified, and do not remediate beyond schema-derived corrections.
+
+### Angus
+
+Product folder: `/Angus/`
+
+| Table   | Schema File                 | Rules File               | Rules Status |
+| ------- | --------------------------- | ------------------------ | ------------ |
+| Area    | `/Angus/Schema/Area.json`   | `/Angus/Rules/Area.md`   | Populated    |
+| Contact | `/Angus/Schema/Contact.json`| `/Angus/Rules/Contact.md`| Populated    |
+| Tenant  | `/Angus/Schema/Tenant.json` | `/Angus/Rules/Tenant.md` | Populated    |
+
+### EVO
+
+Product folder: `/EVO/`
+
+| Table          | Schema File                       | Rules File                     | Rules Status |
+| -------------- | --------------------------------- | ------------------------------ | ------------ |
+| BuildingFloors | `/EVO/Schema/BuildingFloors.json` | `/EVO/Rules/BuildingFloors.md` | Populated    |
+| FAREALO        | `/EVO/Schema/FAREALO.json`        | `/EVO/Rules/FAREALO.md`        | Populated    |
+| FLOCATE        | `/EVO/Schema/FLOCATE.json`        | `/EVO/Rules/FLOCATE.md`        | Populated    |
+| Floors         | `/EVO/Schema/Floors.json`         | `/EVO/Rules/Floors.md`         | Populated    |
+
+### PLE
+
+Product folder: `/PLE/`
+
+| Table    | Schema File                 | Rules File               | Rules Status |
+| -------- | --------------------------- | ------------------------ | ------------ |
+| Address  | `/PLE/Schema/Address.json`  | `/PLE/Rules/Address.md`  | Empty        |
+| Demise   | `/PLE/Schema/Demise.json`   | `/PLE/Rules/Demise.md`   | Empty        |
+| Lease    | `/PLE/Schema/Lease.json`    | `/PLE/Rules/Lease.md`    | Empty        |
+| Property | `/PLE/Schema/Property.json` | `/PLE/Rules/Property.md` | Empty        |
+| Tenant   | `/PLE/Schema/Tenant.json`   | `/PLE/Rules/Tenant.md`   | Empty        |
+| Unit     | `/PLE/Schema/Unit.json`     | `/PLE/Rules/Unit.md`     | Empty        |
+
+### PMX
+
+Product folder: `/PMX/`
+
+| Table  | Schema File                | Rules File              | Rules Status |
+| ------ | -------------------------- | ----------------------- | ------------ |
+| BMAP   | `/PMX/Schema/BMAP.json`    | `/PMX/Rules/BMAP.md`    | Populated    |
+| ENTITY | `/PMX/Schema/ENTITY.json`  | `/PMX/Rules/ENTITY.md`  | Populated    |
+| GACC   | `/PMX/Schema/GACC.json`    | `/PMX/Rules/GACC.md`    | Populated    |
+
+Before relying on this registry, list `/{Product}/Schema/` and `/{Product}/Rules/` to confirm it is current. The repository is the authority; this table is its index.
+
+---
+
 # Authoring Convention — Adding a Rules File
 
 When populating an empty rules file, or adding a new table:
@@ -622,9 +761,11 @@ Before returning a final result, confirm every applicable point is YES:
 | 10 | The original user's file was not modified                                            |
 | 11 | Every automated correction is supported by an authoritative source                   |
 | 12 | Every change made is recorded in the Change Log                                      |
-| 13 | The cleaned output file was re-validated                                             |
-| 14 | Final status is based on the results of the final validation                         |
-| 15 | Any unresolved issues are clearly identified                                         |
+| 13 | The cleaned file and the Change Log reconcile exactly — no change in one is absent from the other |
+| 14 | The cleaned output file was re-validated                                             |
+| 15 | Final status is based on the results of the final validation                         |
+| 16 | Any unresolved issues are clearly identified, with what the user must supply         |
+| 17 | All three artefacts were delivered in full — cleaned file, Change Log, final report — none truncated or sampled |
 
 If any check is NO, fix the result before returning it.
 
