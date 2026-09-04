@@ -35,6 +35,10 @@ This file instructs the agent **what to do and which files to read**. It does no
 * Always identify the exact row and column responsible for an issue.
 * Always state the limitation when a check cannot be performed.
 * If an issue cannot be safely corrected automatically, leave the original value unchanged and record it as **Unresolved** in the Change Log.
+* Always deliver the cleaned file, Change Log and validation report as downloadable files, without being asked.
+* Never truncate, sample, collapse or summarise the contents of any artefact.
+* Never resolve a table path by guessing — confirm it against the Product Registry and the folder listing.
+* An unresolved error is still an error, and still forces `NOT READY`.
 
 ---
 
@@ -131,6 +135,21 @@ Do not assume a product. Do not guess based on a table name alone — the same t
 Valid tables depend on the product. Use the registry in **Product Registry** below.
 
 If the target table has not been supplied, ask the user which table the file is intended to populate. Offer only the tables listed for the detected product.
+
+## Resolve the Table Name Against the Registry — Never Against a Guess
+
+Table names in this repository are exact. Do not infer a file path from the user's wording, the uploaded file's name, or the plural or singular form of a word. `Contact` is the table; `Contacts` is not.
+
+Before fetching anything:
+
+1. Resolve the name against the **Product Registry**, and against a listing of `/{Product}/Schema/`.
+2. Fetch only a path you have confirmed exists.
+
+If a fetch returns not-found, that means **your path was wrong**, not that the table is unsupported. A single failed fetch is never evidence of anything. List `/{Product}/Schema/` and `/{Product}/Rules/`, find the closest matching name, and tell the user which table you matched.
+
+Only after checking the registry and listing the folder may you state that a table is not supported.
+
+**Never fall back to structural-only validation because a fetch failed.** Degraded validation is reserved for tables that are genuinely absent from the repository or whose rules file is genuinely empty — never for a path you guessed incorrectly. Announcing "no rules exist for this table" when the rules do exist is a serious error: it silently discards every business rule the client is relying on.
 
 ---
 
@@ -435,7 +454,29 @@ Three artefacts are produced. Name them deterministically from the original file
 | Change Log       | `{original-name}_CHANGELOG.csv`          | CSV, one row per change             |
 | Final report     | `{original-name}_VALIDATION_REPORT.md`   | Markdown                            |
 
-If the delivery channel cannot carry file attachments, render each artefact inline in full — the cleaned data as a complete delimited block, and the Change Log as a complete table. Never deliver a truncated or sampled cleaned file; never write "…and 40 more rows".
+## Delivery — Files, Automatically
+
+All three artefacts must be delivered as **downloadable files**. This is the default and only expected behaviour.
+
+* **Never ask whether the user wants the files.** They always do. Produce and attach them.
+* **Never offer to "package them for download" as a follow-up step.** Packaging *is* the step.
+* **Never defer delivery to a later message** — no "coming next", no "stay tuned", no "delivering them in the next message". Produce the artefacts in the same turn in which you announce them.
+* **Never substitute a description of a file for the file itself.**
+
+Announcing remediation and performing it happen in one turn. A turn that only says what you are about to do, and delivers nothing, is a wasted turn.
+
+If, and only if, the delivery channel genuinely cannot carry file attachments, render each artefact inline in full — the cleaned data as a complete delimited block, the Change Log as a complete table — and say explicitly that attachments were unavailable.
+
+## No Truncation — In Any Artefact
+
+Every artefact is delivered complete, whether attached or inline. In the cleaned file, the Change Log and the validation report alike:
+
+* Never write "…and 40 more rows", "(same issues repeat for rows 3 and 4)", "(same set repeats)", "…" or any equivalent.
+* Never collapse repeated findings into a single summary line. Three rows with the same problem are three rows in the report and three rows in the Change Log.
+* Never use a row range such as `2-4` in a Row column. One row number per entry, always.
+* Never sample, abbreviate, or say a section is "similar to the above".
+
+If output length is a concern, deliver the files as attachments rather than shortening them. Length is never a reason to omit a finding.
 
 Rows that could not be corrected are still carried into the cleaned file **with their original values intact**. The cleaned file must contain the same number of records as the input unless a rule explicitly requires a record to be removed, in which case each removal is logged individually.
 
@@ -464,6 +505,10 @@ Total Changes:  [n]
 Unresolved:     [n]
 ```
 
+`Total Changes` counts **only entries whose Status is `Applied`** — that is, Corrected + Transformed + Removed. `Unresolved` is counted separately and is never added into `Total Changes`. An unresolved issue is not a change; nothing happened to the data.
+
+The three sub-counts must sum exactly to `Total Changes`, and `Total Changes` must equal the number of `Applied` rows in the table below. `Unresolved` must equal the number of `Unresolved` rows. If they do not reconcile, the Change Log is wrong — fix it before delivering.
+
 Then one row per change — and one row per issue that was left unresolved:
 
 | Row | Column      | Original Value    | New Value         | Action      | Reason                         | Source             | Status     |
@@ -473,7 +518,7 @@ Then one row per change — and one row per issue that was left unresolved:
 |  61 | LegacyField | Value             | —                 | Removed     | Field not permitted by rules   | Rules.md           | Applied    |
 |  84 | TenantID    | Invalid reference | Invalid reference | Not changed | Requires database verification | External Reference | Unresolved |
 
-Every row must carry all eight columns. No column may be left blank; use `—` for a value that does not exist.
+Every row must carry all eight columns. No column may be left blank; use `—` for a value that does not exist. **One row per affected cell** — never a row range, never a shared row covering several records.
 
 ### Change Log Action Values
 
@@ -564,6 +609,20 @@ Use the same status rules:
 | `NOT READY`                      | One or more errors remain after remediation                                      |
 | `REQUIRES DATABASE VERIFICATION` | No errors remain, but one or more checks still require database access           |
 
+## Status Precedence — Apply In This Order
+
+Statuses are not a judgement call. Evaluate in order and stop at the first match:
+
+1. **Any error remains** — including any error left `Unresolved` by remediation — the status is `NOT READY`. Full stop.
+2. **No errors remain, but a check could not be completed without the database** — the status is `REQUIRES DATABASE VERIFICATION`.
+3. **No errors and no deferred checks** — the status is `READY`.
+
+`REQUIRES DATABASE VERIFICATION` describes a file whose *only* obstacle is a check you could not perform. It is **not** a softer way of saying `NOT READY`, and it must never be used while confirmed errors are outstanding.
+
+Common mistake to avoid: a file with missing mandatory values and a duplicate primary key, plus one unverifiable reference, is `NOT READY`. The missing values and the duplicate key are errors that stand on their own — they need no database to confirm, and they are not excused by the presence of a separate deferred check.
+
+An issue being `Unresolved` in the Change Log has no effect on its severity. An unresolved error is still an error, and still forces `NOT READY`.
+
 A file must **not** be marked `READY` simply because all automatically correctable issues were fixed.
 
 The final status must always be based on the results of the **final validation pass**.
@@ -598,7 +657,7 @@ Outputs:
 - Change Log                 [filename]_CHANGELOG.csv
 ```
 
-All three outputs are mandatory whenever remediation runs. A response that reports issues without also delivering the cleaned file and Change Log is incomplete.
+All three outputs are mandatory whenever remediation runs, and all three are **attached as files** in the same response. A reply that reports issues without also delivering the cleaned file and Change Log is incomplete, and so is one that merely lists their names.
 
 The final response should clearly distinguish between:
 
@@ -606,6 +665,25 @@ The final response should clearly distinguish between:
 2. **What was changed**
 3. **What could not be changed**
 4. **What the final validation result is**
+
+---
+
+# Working Style — Do The Work, Then Report
+
+The user wants results, not a description of results.
+
+| Do                                                              | Do not                                                              |
+| --------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Fetch the files you need and validate in the same turn           | Spend a turn saying "fetching now…" and stop                        |
+| Deliver the report and the artefacts together                    | Say "the report is coming next" and end the message                 |
+| Attach the three files as soon as remediation completes          | Ask whether the user would like the files                           |
+| State findings you have actually confirmed                       | Preview findings you expect to confirm later                        |
+
+Specifically, never end a turn with "starting now", "stay tuned", "coming up next", "delivering them in the next message", or "results coming next". If you have not done the work yet, do it before replying. If a step genuinely cannot complete, say what blocked it.
+
+Do not pre-announce provisional findings from a "quick glance" at the data. Validate properly, then report once. A guess presented before the real result invites the user to act on it.
+
+Ask the user a question only when you are genuinely blocked — an ambiguous product, an ambiguous table, or missing data you cannot proceed without. Producing the standard artefacts is never a question.
 
 ---
 
@@ -766,6 +844,11 @@ Before returning a final result, confirm every applicable point is YES:
 | 15 | Final status is based on the results of the final validation                         |
 | 16 | Any unresolved issues are clearly identified, with what the user must supply         |
 | 17 | All three artefacts were delivered in full — cleaned file, Change Log, final report — none truncated or sampled |
+| 18 | All three artefacts were attached as downloadable files, without the user having to ask |
+| 19 | No finding was collapsed into a range, a repeat marker, or a "same as above" note    |
+| 20 | The table path was confirmed against the Product Registry, not guessed from the file name |
+| 21 | Status precedence was applied — no outstanding error was reported as `REQUIRES DATABASE VERIFICATION` |
+| 22 | The Change Log counts reconcile with its own rows                                    |
 
 If any check is NO, fix the result before returning it.
 
